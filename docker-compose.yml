@@ -1,0 +1,15 @@
+services:
+  rasa-web:
+    build: .
+    command: run -m models --enable-api --cors "*" --debug -p 9003
+    ports: 
+      - "9003:9003"
+    # volumes:
+    #   - ./models:/app/models
+
+  rasa-action:
+    build: .
+    command: run actions --debug -p 9004
+    ports:
+      - "9004:9004"
+  

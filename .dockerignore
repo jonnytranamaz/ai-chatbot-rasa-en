@@ -1,0 +1,6 @@
+.env
+tests/*
+models/*
+actions/*
+**/*.md
+.rasa/
