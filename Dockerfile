@@ -4,9 +4,9 @@ RUN python3 -m pip install rasa
 
 COPY . .
 
-RUN rasa train nlu
+RUN rasa train
 
-USER 1001
+USER ai_chatbot_intern
 
 ENTRYPOINT ["rasa"]
 

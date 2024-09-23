@@ -38,8 +38,10 @@ responses:
   - text: "I am a bot, powered by Rasa."
    
   utter_symptom:
-    - text: "i recognize your symptom"
+    - text: "I recognize your symptom"
 
+  utter_out_of_scope:
+  - text: Sorry, I can't handle that request.
 
 session_config:
   session_expiration_time: 60
