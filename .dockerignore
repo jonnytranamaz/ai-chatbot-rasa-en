@@ -4,3 +4,4 @@ models/*
 actions/*
 **/*.md
 .rasa/
+venv

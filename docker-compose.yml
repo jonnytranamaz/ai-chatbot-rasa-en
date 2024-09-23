@@ -1,10 +1,12 @@
 services:
-  rasa-model-builder:
-    build: .
-    command: |
-      bash -c "rasa train && exit"
-    volumes:
-      - ./models:/app/models
+  # rasa-model-builder:
+  #   build: .
+  #   command:
+  #     - train
+  #   # command: |
+  #   #   bash -c "rasa train && exit"
+  #   volumes:
+  #     - ./models:/app/models
 
   rasa-web:
     build: .
