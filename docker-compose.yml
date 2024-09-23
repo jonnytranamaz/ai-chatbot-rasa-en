@@ -1,4 +1,11 @@
 services:
+  rasa-model-builder:
+    build: .
+    command: |
+      bash -c "rasa train && exit"
+    volumes:
+      - ./models:/app/models
+
   rasa-web:
     build: .
     command: run -m models --enable-api --cors "*" --debug -p 9003
