@@ -42,6 +42,8 @@ responses:
 
   utter_out_of_scope:
   - text: Sorry, I can't handle that request.
+  utter_please_rephrase:
+  - text: I'm sorry, I didn't quite understand that because of NLU fallback. Could you rephrase?
 
 session_config:
   session_expiration_time: 60
