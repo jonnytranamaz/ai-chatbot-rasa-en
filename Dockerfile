@@ -10,6 +10,11 @@ COPY . .
 
 RUN rasa train nlu
 
+ADD config.yml config.yml
+ADD domain.yml domain.yml
+ADD credentials.yml credentials.yml
+ADD endpoints.yml endpoints.yml
+
 USER 1001
 
 ENTRYPOINT ["rasa"]

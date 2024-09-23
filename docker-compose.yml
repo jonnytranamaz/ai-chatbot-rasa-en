@@ -8,17 +8,34 @@ services:
   #   volumes:
   #     - ./models:/app/models
 
-  rasa-web:
+  rasa-web-api:
     build: .
-    command: run -m models --enable-api --cors "*" --debug -p 9003
+    working_dir: /app
+    command: bash -c "rm -rf models/* && rasa train && rasa run -m models --enable-api --cors \"*\" --debug -p 9003" 
     ports: 
       - "9003:9003"
+    volumes:
+      - ./models:/app/models
+      - ./data:/app/data
+      - ./actions:/app/actions
+    networks:
+      - all
     # volumes:
     #   - ./models:/app/models
 
   rasa-action:
     build: .
+    working_dir: /app
     command: run actions --debug -p 9004
     ports:
       - "9004:9004"
+    volumes:
+      - ./actions:/app/actions
+    networks:
+      - all
   
+networks:
+  all:
+    driver: bridge
+    driver_opts:
+      com.docker.network.enable_ipv6: "true"
