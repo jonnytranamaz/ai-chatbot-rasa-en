@@ -2,7 +2,7 @@ FROM python:3.10
 
 USER root
 
-RUN python3 -m pip install rasa
+RUN python3 -m pip install rasa==3.5.0
 
 WORKDIR /app
 
