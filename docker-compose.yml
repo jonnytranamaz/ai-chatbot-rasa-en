@@ -27,7 +27,7 @@ services:
   rasa-action:
     build: .
     working_dir: /app
-    command: run actions --debug -p 9004
+    command: rasa run actions --debug -p 9004
     ports:
       - "9004:9004"
     volumes:
