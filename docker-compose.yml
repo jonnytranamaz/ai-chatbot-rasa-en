@@ -11,7 +11,8 @@ services:
   rasa-web-api:
     build: .
     working_dir: /app
-    command: bash -c "rm -rf models/* && rasa train && rasa run -m models --enable-api --cors \"*\" --debug -p 9003" 
+    command: >
+      - bash -c "rm -rf models/* && rasa train && rasa run -m models --enable-api --cors \"*\" --debug -p 9003" 
     ports: 
       - "9003:9003"
     volumes:

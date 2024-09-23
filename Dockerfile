@@ -19,5 +19,5 @@ USER 1001
 
 ENTRYPOINT ["rasa"]
 
-CMD ["rasa", "run", "--enable-api", "--port", "8080",  "--cors", "*", "--debug"]
+CMD ["rasa", "run", "--enable-api", "--port", "9003",  "--cors", "*", "--debug"]
 
