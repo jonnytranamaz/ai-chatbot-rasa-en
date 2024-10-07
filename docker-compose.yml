@@ -21,8 +21,11 @@ services:
       - ./actions:/app/actions
     networks:
       - all
+    depends_on:
+      - rasa-action
     # volumes:
     #   - ./models:/app/models
+    # them depend_on: - rasa-action
 
   rasa-action:
     build: .
@@ -34,6 +37,8 @@ services:
       - ./actions:/app/actions
     networks:
       - all
+    depends_on:
+      - rasa-web-api
   
 networks:
   all:
