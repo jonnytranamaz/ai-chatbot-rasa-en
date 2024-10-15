@@ -10,7 +10,7 @@ intents:
   - bot_challenge
 
   - ask_symptom
-
+  - booking
 actions:
   - action_extract_symptom
 
@@ -44,6 +44,9 @@ responses:
   - text: Sorry, I can't handle that request.
   utter_please_rephrase:
   - text: I'm sorry, I didn't quite understand that because of NLU fallback. Could you rephrase?
+
+  utter_booking:
+  - text: "bạn đang muốn booking"
 
 session_config:
   session_expiration_time: 60
