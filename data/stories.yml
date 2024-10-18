@@ -28,3 +28,12 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: ask about symptom
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_symptom
+    - action: action_extract_symptom
+    - action: utter_symptom
+

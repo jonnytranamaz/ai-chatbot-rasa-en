@@ -15,7 +15,8 @@ rules:
 - rule: ask symptom
   steps:
     - intent: ask_symptom
-    - action: action_extract_symptom #utter_symptom
+    - action: action_extract_symptom
+    - action: utter_symptom
 
 - rule: out-of-scope
   steps:
@@ -26,3 +27,4 @@ rules:
   steps:
   - intent: nlu_fallback
   - action: utter_please_rephrase
+
