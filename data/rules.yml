@@ -26,3 +26,9 @@ rules:
   steps:
   - intent: nlu_fallback
   - action: utter_please_rephrase
+
+- rule: ask clinic location
+  steps:
+    - intent: ask_clinic_location
+    - action: utter_return_clinic_location
+    

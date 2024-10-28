@@ -10,13 +10,392 @@ intents:
   - bot_challenge
 
   - ask_symptom
+  - ask_clinic_location
+  - out_of_scope
 
+  - ask_weight_loss
+  - provide_height_weight
+  - ask_bodybuilding_nutrition
+  - provide_goals
+  - ask_diabetes_nutrition
+  - ask_pregnancy_nutrition
+  - ask_vegetarian_nutrition
+  - ask_acne_skin_care
+  - provide_skin_type
+  - ask_anti_ageing
+  - ask_hair_care
+  - ask_sensitive_skin_care
+  - ask_skin_whitening
+  - ask_dental_care
+  - provide_brush_type
+  - ask_sensitive_teeth
+  - confirm_sensitivity
+  - ask_tooth_filling
+  - confirm_tooth_pain
+  - ask_braces
+  - confirm_teeth_alignment
+  - ask_child_dental_care
+  - ask_weight_loss_exercise
+  - confirm_no_plan
+  - ask_beginner_exercise
+  - confirm_home_workout
+  - ask_athlete_nutrition
+  - confirm_sport_type
+  - ask_injury_recovery
+  - confirm_no_doctor_visit
+  - ask_senior_exercise
+  - confirm_senior_status
+  - ask_sexual_health_safety
+  - confirm_more_info
+  - ask_reproductive_health
+  - confirm_period_pain
+  - ask_sexual_dysfunction
+  - confirm_discomfort
+  - ask_stis_prevention
+  - confirm_sti_interest
+  - ask_pregnancy_fertility
+  - ask_weight_loss
+  - confirm_height_weight
+  - ask_diet_plan
+  - confirm_food_preferences
+  - ask_bodybuilding_nutrition
+  - confirm_training_goal
+  - ask_diabetes_nutrition
+  - confirm_want_food_list
+  - ask_food_logging
+  - ask_pregnancy_nutrition
+  - confirm_want_diet_plan
+  - ask_foods_to_avoid
+  - ask_vegetarian_nutrition
+  - confirm_want_sample_menu
+  - ask_cooking_info
+  - ask_acne_skin_care
+  - confirm_skin_type
+  - ask_product_details
+  - ask_anti_aging_skin_care
+  - confirm_want_routine
+  - ask_more_skin_care_tips
+  - ask_hair_care
+  - confirm_need_product_suggestions
+  - ask_usage_instructions
+  - ask_sensitive_skin_care
+  - confirm_want_simple_routine
+  - ask_specific_product_suggestions
+  - ask_skin_whitening
+  - confirm_want_product_suggestions
+  - ask_usage_info
+  - ask_oral_care
+  - confirm_brush_type
+  - ask_product_suggestions
+  - ask_sensitive_teeth
+  - confirm_sensitivity
+  - ask_more_remedies
+  - ask_cavity_advice
+  - confirm_discomfort
+  - ask_warning_signs
+  - ask_braces_advice
+  - confirm_need_braces
+  - ask_braces_types
+  - ask_children_dental_care
+  - confirm_child_age
+  - ask_weight_loss_exercise
+  - confirm_no_plan
+  - ask_beginner_exercise
+  - confirm_home_exercise
+  - ask_exercise_guidance
+  - ask_athlete_nutrition
+  - confirm_running
+  - ask_sample_menu
+  - ask_injury_care
+  - confirm_no_doctor_visit
+  - ask_more_info
+  - ask_senior_exercise
+  - confirm_senior
+  - ask_joint_pain
+  - confirm_back_pain
+  - ask_eye_problem
+  - confirm_eye_discomfort
+  - ask_post_covid_cough
+  - confirm_day_night_cough
+  - ask_post_covid_fatigue
+  - confirm_fatigue_during_sports
+  - ask_skin_problem
+  - confirm_acne_issue
+  - ask_ligament_strain
+  - ask_diabetes
+  - ask_digestive_disorder
+  - confirm_symptoms
+  - ask_heart_disease
+  - ask_kidney_disease
+  - ask_contact_info
+  - ask_diabetes_symptoms
+  - ask_heart_disease_symptoms
+  - ask_stomach_pain_symptoms
+  - ask_liver_disease_symptoms
+  - ask_joint_pain_symptoms
+  - ask_contact_info
+  - ask_eye_problem
+  - ask_skin_problem
+  - ask_stomach_problem
+  - ask_joint_problem
+  - ask_general_checkup
+  - ask_fatigue_and_pain
+  - ask_chest_pain
+  - ask_headache
+  - ask_stress
+  - ask_food_allergy
+  - ask_back_pain
+  - ask_digestive_issue
+  - ask_avoid_hospital
+  - ask_allergy
+  - ask_diabetes
+  - ask_find_clinic_quarter
+  - ask_eye_clinic
+  - ask_find_clinic
+  - ask_dermatology
+  - ask_distance_clinic
+  - ask_fever
+  - ask_fatigue_breathing
+  - ask_back_pain
+  - ask_sore_throat
+  - ask_severe_headache
+  - ask_diabetes_info
+  - ask_high_blood_pressure
+  - ask_bronchitis_info
+  - ask_stomach_pain
+  - ask_anxiety_stress
+  - ask_bmi
+  - ask_blood_pressure
+  - ask_blood_sugar
+  - ask_cholesterol
+  - ask_mental_health
+actions:
+  - action_ask_height_weight
+  - action_calculate_bmi
+  - action_offer_diet_plan
+  - action_detail_diet_plan
+  - action_suggest_alternatives
+  - action_ask_goals
+  - action_offer_protein_tips
+  - action_suggest_foods
+  - action_offer_nutrition_tips
+  - action_send_food_list
+  - action_offer_meal_logging_help
+  - action_send_foods_to_avoid
+  - action_offer_protein_sources
+  - action_send_sample_menu
+  - action_offer_cooking_tips
+  - action_offer_meal_schedule
+  - action_ask_skin_type
+  - action_offer_product_recommendations
+  - action_give_usage_info
+  - action_offer_anti_ageing_tips
+  - action_suggest_routine
+  - action_give_daily_care_tips
+  - action_offer_hair_repair_tips
+  - action_suggest_hair_products
+  - action_give_usage_instructions
+  - action_offer_sensitive_skin_tips
+  - action_suggest_simple_routine
+  - action_give_specific_product_suggestions
+  - action_offer_whitening_tips
+  - action_suggest_whitening_products
+  - action_give_usage_details
+  - action_offer_brushing_advice
+  - action_give_brushing_tips
+  - action_suggest_toothpaste
+  - action_explain_sensitive_teeth
+  - action_offer_sensitive_toothpaste
+  - action_suggest_professional_treatment
+  - action_offer_dental_visit_advice
+  - action_recommend_avoid_hot_cold
+  - action_list_signs_for_dentist
+  - action_explain_braces
+  - action_detail_braces_process
+  - action_explain_types_of_braces
+  - action_offer_child_brushing_tips
+  - action_suggest_fun_brushing_activities
+  - action_offer_reward_system
+  - action_offer_workout_plan
+  - action_suggest_weekly_workout_schedule
+  - action_offer_home_exercises
+  - action_suggest_exercise_tips
+  - action_offer_nutrition_advice
+  - action_suggest_sample_meal_plan
+  - action_explain_injury_care
+  - action_suggest_rice_method
+  - action_offer_senior_exercise_tips
+  - action_suggest_specific_schedule
+  - action_explain_safe_sex
+  - action_suggest_protection_methods
+  - action_offer_health_concerns
+  - action_advise_doctor_visit
+  - action_explain_sexual_dysfunction
+  - action_suggest_improvement_methods
+  - action_explain_stis
+  - action_suggest_sti_info
+  - action_offer_fertility_tips
+  - action_suggest_healthy_lifestyle
+  - action_collect_height_weight
+  - action_calculate_bmi
+  - action_suggest_diet_plan
+  - action_propose_alternatives
+  - action_collect_training_goal
+  - action_suggest_protein_intake
+  - action_propose_food_list
+  - action_explain_diabetes_diet
+  - action_provide_food_list
+  - action_offer_logging_help
+  - action_explain_pregnancy_diet
+  - action_propose_balanced_diet
+  - action_explain_foods_to_avoid
+  - action_explain_vegetarian_diet
+  - action_propose_sample_menu
+  - action_offer_cooking_tips
+  - action_collect_skin_type
+  - action_suggest_acne_products
+  - action_provide_product_info
+  - action_suggest_anti_aging_products
+  - action_propose_anti_aging_routine
+  - action_offer_skin_care_tips
+  - action_suggest_hair_recovery_products
+  - action_provide_hair_product_info
+  - action_offer_usage_guidance
+  - action_explain_sensitive_skin_care
+  - action_propose_sensitive_skin_routine
+  - action_suggest_specific_products
+  - action_explain_skin_whitening_methods
+  - action_propose_whitening_products
+  - action_offer_usage_tips
+  - action_collect_brush_type
+  - action_provide_brushing_tips
+  - action_suggest_oral_products
+  - action_explain_sensitive_teeth
+  - action_suggest_sensitivity_remedies
+  - action_provide_additional_remedies
+  - action_explain_cavity_treatment
+  - action_remind_to_visit_dentist
+  - action_provide_warning_signs
+  - action_explain_braces_benefits
+  - action_explain_braces_process
+  - action_provide_braces_types
+  - action_collect_child_age
+  - action_provide_kids_brushing_tips
+  - action_suggest_kids_motivation
+  - action_collect_workout_plan
+  - action_suggest_weekly_workout
+  - action_collect_exercise_location
+  - action_suggest_home_exercises
+  - action_provide_exercise_guidance
+  - action_collect_sport_type
+  - action_suggest_nutrition_plan
+  - action_provide_sample_menu
+  - action_explain_injury_first_aid
+  - action_provide_home_care_tips
+  - action_offer_additional_info
+  - action_collect_age_info
+  - action_suggest_light_exercises
+  - action_offer_workout_plan
+  - action_collect_joint_pain_info
+  - action_suggest_joint_specialist
+  - action_collect_eye_problem_info
+  - action_suggest_eye_specialist
+  - action_collect_cough_info
+  - action_suggest_post_covid_specialist
+  - action_collect_fatigue_info
+  - action_suggest_fatigue_specialist
+  - action_collect_skin_problem_info
+  - action_suggest_skin_specialist
+  - action_explain_ligament_strain
+  - action_explain_diabetes
+  - action_explain_digestive_disorder
+  - action_collect_contact_info
+  - action_explain_heart_disease
+  - action_explain_kidney_disease
+  - action_explain_diabetes_symptoms
+  - action_explain_heart_disease_symptoms
+  - action_explain_stomach_pain_symptoms
+  - action_explain_liver_disease_symptoms
+  - action_explain_joint_pain_symptoms
+  - action_collect_contact_info
+  - action_find_hospital_eye
+  - action_find_hospital_skin
+  - action_find_hospital_stomach
+  - action_find_hospital_joint
+  - action_find_hospital_general_checkup
+  - action_explain_fatigue_and_pain
+  - action_explain_chest_pain
+  - action_collect_contact_info
+  - action_explain_headache
+  - action_explain_stress_management
+  - action_explain_food_allergy
+  - action_collect_contact_info
+  - action_collect_personal_info
+  - action_recommend_orthopedic_doctor
+  - action_recommend_digestion_doctor
+  - action_offer_phone_consultation
+  - action_collect_symptoms
+  - action_collect_allergy_info
+  - action_recommend_allergy_doctor
+  - action_recommend_endocrinologist
+  - action_collect_contact_info
+  - action_collect_specialty
+  - action_provide_clinic_info
+  - action_provide_dermatology_clinic_info  
+  - action_collect_symptoms
+  - action_advise_doctor_visit
+  - action_advise_rest
+  - action_advise_stretching
+  - action_collect_personal_info
+  - action_recommend_ent_doctor
+  - action_advise_neurologist
+  - action_explain_diabetes_symptoms
+  - action_explain_high_blood_pressure
+  - action_explain_bronchitis
+  - action_explain_stomach_pain
+  - action_explain_anxiety
+  - action_collect_contact_info
+  - action_collect_additional_questions
+  - action_explain_bmi
+  - action_collect_weight_height
+  - action_calculate_bmi
+  - action_offer_health_improvement
+  - action_explain_blood_pressure
+  - action_collect_symptoms
+  - action_offer_blood_pressure_check
+  - action_explain_blood_sugar
+  - action_offer_blood_sugar_test
+  - action_explain_cholesterol
+  - action_offer_cholesterol_test
+  - action_explain_mental_health
+  - action_collect_stress_info
+  - action_offer_psychological_assessment
 actions:
   - action_extract_symptom
 
 entities:
   - symptom
+  - location
+  - speciality
+  - clinic
 
+slots:
+  symptom:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: symptom
+  location:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: location
+
+  speciality:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: speciality
 responses:
   utter_greet:
   - text: "Hey! How are you?"
@@ -44,6 +423,583 @@ responses:
   - text: Sorry, I can't handle that request.
   utter_please_rephrase:
   - text: I'm sorry, I didn't quite understand that because of NLU fallback. Could you rephrase?
+  utter_return_clinic_location:
+  - text: "The clinic is located at district 7, Ho Chi Minh City"
+
+  utter_action_ask_height_weight:
+    - text: "Bạn có thể cung cấp chiều cao và cân nặng hiện tại của mình không?"
+
+  utter_action_calculate_bmi:
+    - text: "Chỉ số BMI của bạn là khoảng {bmi}. Điều này cho thấy bạn đang ở ngưỡng thừa cân."
+
+  utter_action_offer_diet_plan:
+    - text: "Tôi có thể gợi ý cho bạn một kế hoạch dinh dưỡng lành mạnh để giảm cân từ từ. Bạn có muốn tham khảo không?"
+
+  utter_action_detail_diet_plan:
+    - text: "Tuyệt vời! Tôi sẽ giúp bạn lập một kế hoạch ăn uống với thực phẩm ít calo."
+
+  utter_action_offer_protein_tips:
+    - text: "Để tăng cơ hiệu quả, bạn nên tăng lượng protein trong khẩu phần ăn."
+
+  utter_action_suggest_foods:
+    - text: "Bạn nên bổ sung thực phẩm như thịt nạc, trứng, đậu hũ, và các loại hạt."
+
+  utter_action_offer_nutrition_tips:
+    - text: "Trong giai đoạn mang thai, bạn cần tăng cường ăn các thực phẩm giàu protein và vitamin."
+
+  utter_action_send_food_list:
+    - text: "Đây là danh sách thực phẩm phù hợp cho người tiểu đường."
+
+  utter_action_offer_meal_logging_help:
+    - text: "Bạn có muốn tôi giúp bạn tìm hiểu cách ghi chép các bữa ăn hàng ngày không?"
+
+  utter_action_send_foods_to_avoid:
+    - text: "Đây là những thực phẩm bạn nên tránh trong thời gian mang thai."
+
+  utter_action_offer_protein_sources:
+    - text: "Để đảm bảo bạn nhận đủ protein, bạn nên ăn nhiều các loại đậu và hạt."
+
+  utter_action_send_sample_menu:
+    - text: "Một thực đơn mẫu có thể bao gồm cháo yến mạch cho bữa sáng, salad đậu cho bữa trưa."
+
+  utter_action_offer_cooking_tips:
+    - text: "Bạn có cần thêm thông tin về cách chế biến thực phẩm không?"
+  utter_action_ask_skin_type:
+    - text: "Bạn có biết loại da của mình (da dầu, da khô, da hỗn hợp) không?"
+
+  utter_action_offer_product_recommendations:
+    - text: "Bạn nên chọn sản phẩm kiềm dầu và có thành phần trị mụn như salicylic acid."
+
+  utter_action_give_usage_info:
+    - text: "Bạn có cần thêm thông tin về cách sử dụng các sản phẩm này không?"
+
+  utter_action_offer_anti_ageing_tips:
+    - text: "Bạn nên bổ sung các sản phẩm có chứa retinol, vitamin C và kem chống nắng hàng ngày."
+
+  utter_action_suggest_routine:
+    - text: "Bạn nên bắt đầu với việc sử dụng sữa rửa mặt dịu nhẹ, sau đó thoa serum vitamin C."
+
+  utter_action_give_daily_care_tips:
+    - text: "Bạn có cần tôi tư vấn thêm về cách chăm sóc da hàng ngày không?"
+
+  utter_action_offer_hair_repair_tips:
+    - text: "Bạn nên sử dụng các loại dầu dưỡng tóc và mặt nạ tóc chứa keratin và protein."
+
+  utter_action_suggest_hair_products:
+    - text: "Một số sản phẩm bạn có thể tham khảo là dầu argan và mặt nạ tóc chứa keratin."
+
+  utter_action_give_usage_instructions:
+    - text: "Bạn có cần tôi hướng dẫn cách sử dụng các sản phẩm này không?"
+
+  utter_action_offer_sensitive_skin_tips:
+    - text: "Da nhạy cảm cần sử dụng các sản phẩm không chứa cồn và hương liệu."
+
+  utter_action_suggest_simple_routine:
+    - text: "Bạn nên bắt đầu với sữa rửa mặt dịu nhẹ, sau đó thoa toner không cồn."
+
+  utter_action_give_specific_product_suggestions:
+    - text: "Bạn có muốn tôi gợi ý những sản phẩm cụ thể không?"
+
+  utter_action_offer_whitening_tips:
+    - text: "Bạn nên sử dụng sản phẩm có chứa niacinamide và vitamin C."
+
+  utter_action_suggest_whitening_products:
+    - text: "Một số sản phẩm bạn có thể tham khảo là serum vitamin C và kem dưỡng trắng da."
+
+  utter_action_give_usage_details:
+    - text: "Bạn có cần thêm thông tin về cách sử dụng không?"
+  utter_action_offer_brushing_advice:
+    - text: "Để có hàm răng khỏe mạnh, bạn cần đánh răng ít nhất hai lần một ngày."
+
+  utter_action_give_brushing_tips:
+    - text: "Hãy chắc chắn bạn đánh răng ít nhất 2 phút mỗi lần và sử dụng chỉ nha khoa."
+
+  utter_action_suggest_toothpaste:
+    - text: "Bạn có thể thử sử dụng kem đánh răng có chứa fluoride để tăng cường bảo vệ men răng."
+
+  utter_action_explain_sensitive_teeth:
+    - text: "Răng nhạy cảm có thể do mòn men răng hoặc lộ ngà."
+
+  utter_action_offer_sensitive_toothpaste:
+    - text: "Bạn có thể thử sử dụng kem đánh răng chuyên dụng cho răng nhạy cảm."
+
+  utter_action_suggest_professional_treatment:
+    - text: "Bạn có thể đến nha sĩ để kiểm tra và có thể cần điều trị bằng fluor."
+
+  utter_action_offer_dental_visit_advice:
+    - text: "Nếu chiếc răng bị sâu, bạn nên đến nha sĩ để được khám."
+
+  utter_action_recommend_avoid_hot_cold:
+    - text: "Hãy chú ý tránh ăn những thực phẩm quá nóng hoặc lạnh cho đến khi bạn gặp nha sĩ."
+
+  utter_action_list_signs_for_dentist:
+    - text: "Ngoài đau nhức, bạn cũng nên đến nha sĩ nếu thấy có dấu hiệu sưng tấy hoặc chảy máu nướu."
+
+  utter_action_explain_braces:
+    - text: "Niềng răng có thể giúp điều chỉnh vị trí của răng và cải thiện nụ cười của bạn."
+
+  utter_action_detail_braces_process:
+    - text: "Quy trình niềng răng bắt đầu bằng việc nha sĩ sẽ kiểm tra răng và chụp X-quang."
+
+  utter_action_explain_types_of_braces:
+    - text: "Bạn có muốn biết về các loại niềng răng khác nhau không?"
+
+  utter_action_offer_child_brushing_tips:
+    - text: "Hãy dạy trẻ đánh răng hai lần một ngày từ sớm."
+
+  utter_action_suggest_fun_brushing_activities:
+    - text: "Hãy tạo thói quen vui vẻ khi đánh răng bằng cách cùng trẻ đánh răng."
+
+  utter_action_offer_reward_system:
+    - text: "Bạn có thể tạo ra một trò chơi hoặc dùng sticker để thưởng cho trẻ khi đánh răng đúng cách."
+  utter_action_offer_workout_plan:
+    - text: "Bạn nên kết hợp giữa cardio và bài tập sức mạnh."
+
+  utter_action_suggest_weekly_workout_schedule:
+    - text: "Bạn có muốn tôi gợi ý một lịch tập trong tuần không?"
+
+  utter_action_offer_home_exercises:
+    - text: "Một số bài tập đơn giản tại nhà như squats, lunges, và plank."
+
+  utter_action_suggest_exercise_tips:
+    - text: "Bạn có muốn tôi hướng dẫn cách thực hiện các bài tập này không?"
+
+  utter_action_offer_nutrition_advice:
+    - text: "Bạn nên tập trung vào các thực phẩm giàu carbohydrate phức hợp và protein."
+
+  utter_action_suggest_sample_meal_plan:
+    - text: "Tôi có thể gửi cho bạn một thực đơn mẫu phù hợp với chế độ tập luyện của bạn không?"
+
+  utter_action_explain_injury_care:
+    - text: "Bạn có thể áp dụng phương pháp R.I.C.E (nghỉ ngơi, chườm đá, băng ép, nâng cao)."
+
+  utter_action_suggest_rice_method:
+    - text: "Tuy nhiên, nếu tình trạng không cải thiện, bạn nên đi khám."
+
+  utter_action_offer_senior_exercise_tips:
+    - text: "Các bài tập nhẹ nhàng như đi bộ, yoga hoặc thể dục nhịp điệu rất tốt cho sức khỏe."
+
+  utter_action_suggest_specific_schedule:
+    - text: "Bạn có muốn tôi gợi ý một lịch tập cụ thể không?"
+
+  utter_action_explain_safe_sex:
+    - text: "Để quan hệ tình dục an toàn, bạn cần sử dụng biện pháp bảo vệ như bao cao su."
+
+  utter_action_suggest_protection_methods:
+    - text: "Ngoài bao cao su, bạn có thể tìm hiểu về thuốc tránh thai hoặc vòng tránh thai."
+
+  utter_action_offer_health_concerns:
+    - text: "Đau bụng kinh có thể là dấu hiệu của nhiều vấn đề khác nhau."
+
+  utter_action_advise_doctor_visit:
+    - text: "Tôi khuyên bạn nên thảo luận với bác sĩ để có chẩn đoán chính xác."
+
+  utter_action_explain_sexual_dysfunction:
+    - text: "Rối loạn tình dục có thể ảnh hưởng đến cả nam và nữ."
+
+  utter_action_suggest_improvement_methods:
+    - text: "Bạn có muốn tôi gợi ý một số cách để cải thiện tình trạng này không?"
+
+  utter_action_explain_stis:
+    - text: "Các bệnh lây truyền qua đường tình dục phổ biến bao gồm HIV, lậu, giang mai và herpes."
+
+  utter_action_suggest_sti_info:
+    - text: "Bạn có muốn biết về triệu chứng và cách phòng ngừa từng bệnh không?"
+
+  utter_action_offer_fertility_tips:
+    - text: "Bạn nên duy trì một lối sống lành mạnh, bao gồm chế độ ăn uống cân bằng và tập thể dục thường xuyên."
+
+  utter_action_suggest_healthy_lifestyle:
+    - text: "Bạn có muốn tôi gợi ý một số thực phẩm tốt cho sức khỏe sinh sản không?"
+  utter_action_collect_height_weight:
+    - text: "Bạn có thể cung cấp chiều cao và cân nặng hiện tại của mình không?"
+
+  utter_action_calculate_bmi:
+    - text: "Chỉ số BMI của bạn là khoảng 27.55, điều này cho thấy bạn đang ở ngưỡng thừa cân."
+
+  utter_action_suggest_diet_plan:
+    - text: "Tôi có thể gợi ý cho bạn một kế hoạch dinh dưỡng lành mạnh để giảm cân từ từ."
+
+  utter_action_propose_alternatives:
+    - text: "Tôi sẽ tìm hiểu và đưa ra các lựa chọn thay thế cho rau xanh, như trái cây và các loại hạt."
+
+  utter_action_collect_training_goal:
+    - text: "Bạn cần cung cấp thông tin về mục tiêu tập luyện của mình và thói quen ăn uống hiện tại."
+
+  utter_action_suggest_protein_intake:
+    - text: "Để tăng cơ hiệu quả, bạn nên tăng lượng protein trong khẩu phần ăn."
+
+  utter_action_propose_food_list:
+    - text: "Bạn nên bổ sung thực phẩm như thịt nạc, trứng, đậu hũ, và các loại hạt."
+
+  utter_action_explain_diabetes_diet:
+    - text: "Để kiểm soát tiểu đường, bạn nên hạn chế carbohydrate tinh chế và ăn nhiều rau xanh."
+
+  utter_action_provide_food_list:
+    - text: "Tôi có thể gửi cho bạn một danh sách thực phẩm phù hợp cho người tiểu đường không?"
+
+  utter_action_offer_logging_help:
+    - text: "Bạn có muốn tôi giúp bạn tìm hiểu cách ghi chép các bữa ăn hàng ngày không?"
+
+  utter_action_explain_pregnancy_diet:
+    - text: "Trong giai đoạn mang thai, bạn cần tăng cường ăn các thực phẩm giàu protein, canxi và axit folic."
+
+  utter_action_propose_balanced_diet:
+    - text: "Tôi sẽ đề xuất một kế hoạch ăn uống cân bằng cho bạn trong thời gian mang thai."
+
+  utter_action_explain_foods_to_avoid:
+    - text: "Bạn có muốn biết về những thực phẩm nên tránh trong thời gian mang thai không?"
+
+  utter_action_explain_vegetarian_diet:
+    - text: "Để đảm bảo bạn nhận đủ protein và các chất dinh dưỡng khi ăn chay, bạn nên ăn nhiều các loại đậu, hạt và ngũ cốc."
+
+  utter_action_propose_sample_menu:
+    - text: "Tôi có thể gợi ý một thực đơn mẫu cho người ăn chay không?"
+
+  utter_action_offer_cooking_tips:
+    - text: "Bạn có cần thêm thông tin về cách chế biến thực phẩm không?"
+  utter_action_collect_skin_type:
+    - text: "Bạn có biết loại da của mình (da dầu, da khô, da hỗn hợp) không?"
+
+  utter_action_suggest_acne_products:
+    - text: "Bạn nên chọn sản phẩm kiềm dầu và có thành phần trị mụn như salicylic acid."
+
+  utter_action_provide_product_info:
+    - text: "Một số sản phẩm nổi bật bạn có thể tham khảo là gel trị mụn chứa salicylic acid hoặc các loại mặt nạ đất sét."
+
+  utter_action_suggest_anti_aging_products:
+    - text: "Bạn nên bổ sung các sản phẩm có chứa retinol, vitamin C và kem chống nắng hàng ngày."
+
+  utter_action_propose_anti_aging_routine:
+    - text: "Bạn nên bắt đầu với việc sử dụng sữa rửa mặt dịu nhẹ, sau đó thoa serum vitamin C vào buổi sáng và kem dưỡng ẩm có chứa retinol vào buổi tối."
+
+  utter_action_offer_skin_care_tips:
+    - text: "Bạn có cần tôi tư vấn thêm về cách chăm sóc da hàng ngày không?"
+
+  utter_action_suggest_hair_recovery_products:
+    - text: "Bạn nên sử dụng các loại dầu dưỡng tóc và mặt nạ tóc chứa keratin và protein."
+
+  utter_action_provide_hair_product_info:
+    - text: "Một số sản phẩm bạn có thể tham khảo là dầu argan, mặt nạ tóc chứa keratin và xịt dưỡng ẩm cho tóc."
+
+  utter_action_offer_usage_guidance:
+    - text: "Bạn có cần tôi hướng dẫn cách sử dụng các sản phẩm này không?"
+
+  utter_action_explain_sensitive_skin_care:
+    - text: "Da nhạy cảm cần sử dụng các sản phẩm không chứa cồn, hương liệu và chất bảo quản."
+
+  utter_action_propose_sensitive_skin_routine:
+    - text: "Bạn nên bắt đầu với sữa rửa mặt dịu nhẹ, sau đó thoa toner không cồn và cuối cùng là kem dưỡng ẩm không hương liệu."
+
+  utter_action_suggest_specific_products:
+    - text: "Bạn có muốn tôi gợi ý những sản phẩm cụ thể không?"
+
+  utter_action_explain_skin_whitening_methods:
+    - text: "Để dưỡng trắng da hiệu quả, bạn nên sử dụng sản phẩm có chứa niacinamide, vitamin C và các chất chống oxy hóa."
+
+  utter_action_propose_whitening_products:
+    - text: "Một số sản phẩm bạn có thể tham khảo là serum vitamin C và kem dưỡng trắng da có chứa niacinamide."
+
+  utter_action_offer_usage_tips:
+    - text: "Bạn có cần thêm thông tin về cách sử dụng không?"
+  utter_action_collect_brush_type:
+    - text: "Bạn có đang sử dụng bàn chải điện hay bàn chải tay?"
+
+  utter_action_provide_brushing_tips:
+    - text: "Hãy chắc chắn bạn đánh răng ít nhất 2 phút mỗi lần và đừng quên sử dụng chỉ nha khoa để làm sạch giữa các răng."
+
+  utter_action_suggest_oral_products:
+    - text: "Bạn có thể thử sử dụng kem đánh răng có chứa fluoride để tăng cường bảo vệ men răng và giảm nguy cơ sâu răng."
+
+  utter_action_explain_sensitive_teeth:
+    - text: "Răng nhạy cảm có thể do mòn men răng hoặc lộ ngà."
+
+  utter_action_suggest_sensitivity_remedies:
+    - text: "Bạn có thể thử sử dụng kem đánh răng chuyên dụng cho răng nhạy cảm."
+
+  utter_action_provide_additional_remedies:
+    - text: "Bạn có thể đến nha sĩ để kiểm tra và có thể cần điều trị bằng fluor hoặc chất trám để bảo vệ ngà răng."
+
+  utter_action_explain_cavity_treatment:
+    - text: "Nếu chiếc răng bị sâu, tốt nhất là bạn nên đến nha sĩ để được khám và có thể cần phải trám răng."
+
+  utter_action_remind_to_visit_dentist:
+    - text: "Hãy chú ý tránh ăn những thực phẩm quá nóng hoặc lạnh cho đến khi bạn gặp nha sĩ."
+
+  utter_action_provide_warning_signs:
+    - text: "Ngoài đau nhức, bạn cũng nên đến nha sĩ nếu thấy có dấu hiệu sưng tấy, chảy máu nướu hoặc có hơi thở có mùi hôi."
+
+  utter_action_explain_braces_benefits:
+    - text: "Niềng răng có thể giúp điều chỉnh vị trí của răng và cải thiện nụ cười của bạn."
+
+  utter_action_explain_braces_process:
+    - text: "Quy trình niềng răng thường bắt đầu bằng việc nha sĩ sẽ kiểm tra răng và chụp X-quang để xác định mức độ lệch."
+
+  utter_action_provide_braces_types:
+    - text: "Bạn có cần thông tin thêm về các loại niềng răng không?"
+
+  utter_action_collect_child_age:
+    - text: "Bạn có biết con bạn bao nhiêu tuổi không?"
+
+  utter_action_provide_kids_brushing_tips:
+    - text: "Hãy tạo thói quen vui vẻ khi đánh răng bằng cách cùng trẻ đánh răng và dùng kem đánh răng có hương vị yêu thích."
+
+  utter_action_suggest_kids_motivation:
+    - text: "Bạn có thể tạo ra một trò chơi hoặc dùng sticker để thưởng cho trẻ khi đánh răng đúng cách."
+  utter_action_collect_workout_plan:
+    - text: "Bạn đã có kế hoạch tập luyện nào chưa, hay bạn muốn tôi giúp bạn tạo một lịch tập phù hợp?"
+
+  utter_action_suggest_weekly_workout:
+    - text: "Để giảm cân hiệu quả, bạn nên kết hợp giữa cardio và bài tập sức mạnh."
+
+  utter_action_collect_exercise_location:
+    - text: "Bạn muốn tập tại nhà hay đến phòng gym?"
+
+  utter_action_suggest_home_exercises:
+    - text: "Một số bài tập đơn giản tại nhà như squats, lunges, và plank."
+
+  utter_action_provide_exercise_guidance:
+    - text: "Tôi có thể hướng dẫn bạn cách thực hiện các bài tập này."
+
+  utter_action_collect_sport_type:
+    - text: "Bạn đang tập luyện cho môn thể thao nào và có mục tiêu cụ thể nào không?"
+
+  utter_action_suggest_nutrition_plan:
+    - text: "Bạn nên tập trung vào các thực phẩm giàu carbohydrate phức hợp và protein."
+
+  utter_action_provide_sample_menu:
+    - text: "Tôi có thể gửi cho bạn một thực đơn mẫu phù hợp với chế độ tập luyện của bạn không?"
+
+  utter_action_explain_injury_first_aid:
+    - text: "Bạn có thể áp dụng phương pháp R.I.C.E (nghỉ ngơi, chườm đá, băng ép, nâng cao)."
+
+  utter_action_provide_home_care_tips:
+    - text: "Nếu tình trạng không cải thiện, bạn nên đi khám."
+
+  utter_action_offer_additional_info:
+    - text: "Bạn cần thêm thông tin nào khác không?"
+
+  utter_action_collect_age_info:
+    - text: "Bạn hay người thân của bạn đang tìm kiếm thông tin này?"
+
+  utter_action_suggest_light_exercises:
+    - text: "Các bài tập nhẹ nhàng như đi bộ, yoga hoặc thể dục nhịp điệu rất tốt cho sức khỏe."
+
+  utter_action_offer_workout_plan:
+    - text: "Bạn có muốn tôi gợi ý một lịch tập cụ thể không?"
+  utter_action_collect_joint_pain_info:
+    - text: "Bạn có thể cung cấp cho chúng tôi một số thông tin về vấn đề bạn đang gặp phải được không?"
+
+  utter_action_suggest_joint_specialist:
+    - text: "Hiện tại bên Amaz Care có đội ngũ bác sĩ và phòng khám chuyên về xương khớp. Xin vui lòng cho chúng tôi thông tin liên lạc, chúng tôi sẽ liên hệ và tư vấn cho bạn."
+
+  utter_action_collect_eye_problem_info:
+    - text: "Bạn có thể cung cấp cho chúng tôi một số thông tin về vấn đề bạn đang gặp phải được không?"
+
+  utter_action_suggest_eye_specialist:
+    - text: "Hiện tại bên Amaz Care có đội ngũ bác sĩ và phòng khám chuyên về mắt. Xin vui lòng cho chúng tôi thông tin liên lạc, chúng tôi sẽ liên hệ và tư vấn cho bạn."
+
+  utter_action_collect_cough_info:
+    - text: "Bạn có thể cung cấp cho chúng tôi một số thông tin về vấn đề bạn đang gặp phải được không?"
+
+  utter_action_suggest_post_covid_specialist:
+    - text: "Hiện tại bên Amaz Care có đội ngũ bác sĩ và phòng khám chuyên về những vấn đề hậu covid. Xin vui lòng cho chúng tôi thông tin liên lạc, chúng tôi sẽ liên hệ và tư vấn cho bạn."
+
+  utter_action_collect_fatigue_info:
+    - text: "Bạn có thể cung cấp cho chúng tôi một số thông tin về vấn đề bạn đang gặp phải được không?"
+
+  utter_action_suggest_fatigue_specialist:
+    - text: "Hiện tại bên Amaz Care có đội ngũ bác sĩ và phòng khám chuyên về những vấn đề hậu covid. Xin vui lòng cho chúng tôi thông tin liên lạc, chúng tôi sẽ liên hệ và tư vấn cho bạn."
+
+  utter_action_collect_skin_problem_info:
+    - text: "Bạn có thể cung cấp cho chúng tôi một số thông tin về vấn đề bạn đang gặp phải được không?"
+
+  utter_action_suggest_skin_specialist:
+    - text: "Hiện tại bên Amaz Care có phòng khám phù hợp với vấn đề mà bạn đang gặp phải. Xin vui lòng cho chúng tôi thông tin liên lạc, chúng tôi sẽ liên hệ và tư vấn cho bạn."
+  utter_action_explain_ligament_strain:
+    - text: "Giãn dây chằng khớp gối là tình trạng phổ biến diễn ra khi dây chằng bị kéo giãn nhưng không đứt hẳn. Bạn có gặp phải vấn đề đó không?"
+
+  utter_action_explain_diabetes:
+    - text: "Tiểu đường là hiện tượng lượng đường trong máu luôn ở mức cao hơn so với bình thường, thường gặp ở những người lớn tuổi."
+
+  utter_action_explain_digestive_disorder:
+    - text: "Rối loạn tiêu hóa là các vấn đề liên quan đến hệ tiêu hóa, gây khó khăn trong việc tiêu hóa thực phẩm và hấp thụ dinh dưỡng."
+
+  utter_action_explain_heart_disease:
+    - text: "Bệnh tim là các tình trạng liên quan đến tim và mạch máu, như bệnh mạch vành, suy tim hoặc rối loạn nhịp tim."
+
+  utter_action_explain_kidney_disease:
+    - text: "Bệnh thận là các tình trạng liên quan đến chức năng của thận, như suy thận, sỏi thận hoặc nhiễm trùng thận."
+
+  utter_action_collect_contact_info:
+    - text: "Hãy cho chúng tôi thông tin để liên lạc nhé."
+  utter_action_explain_diabetes_symptoms:
+    - text: "Bệnh tiểu đường là một tình trạng liên quan đến khả năng cơ thể sử dụng insulin, dẫn đến mức đường huyết cao. Các triệu chứng có thể bao gồm: Khát nước quá mức, Đi tiểu thường xuyên, Mệt mỏi, Giảm cân không rõ lý do."
+
+  utter_action_explain_heart_disease_symptoms:
+    - text: "Bệnh tim là một tình trạng liên quan đến chức năng của tim và mạch máu. Các triệu chứng có thể bao gồm: Đau ngực hoặc cảm giác nặng nề, Khó thở, Mệt mỏi không rõ lý do, Nhịp tim không đều."
+
+  utter_action_explain_stomach_pain_symptoms:
+    - text: "Đau bao tử, hay còn gọi là viêm loét dạ dày, có thể gây ra các triệu chứng như: Đau hoặc cảm giác nóng rát ở vùng bụng trên, Buồn nôn hoặc nôn, Đầy hơi hoặc chướng bụng, Đau khi ăn hoặc sau khi ăn."
+
+  utter_action_explain_liver_disease_symptoms:
+    - text: "Bệnh gan có thể gây ra các triệu chứng như: Vàng da hoặc vàng mắt, Đau hoặc cảm giác nặng ở vùng bụng trên bên phải, Mệt mỏi hoặc cảm giác yếu, Ăn uống kém hoặc giảm cân không rõ lý do."
+
+  utter_action_explain_joint_pain_symptoms:
+    - text: "Các vấn đề về xương khớp ở người lớn tuổi có thể gây ra các triệu chứng như: Đau hoặc cứng khớp, đặc biệt là vào buổi sáng, Khó khăn trong việc di chuyển hoặc vận động khớp, Sưng hoặc đỏ ở các khớp, Giảm phạm vi chuyển động của khớp."
+
+  utter_action_collect_contact_info:
+    - text: "Hãy cho chúng tôi thông tin để liên lạc nhé."
+  utter_action_find_hospital_eye:
+    - text: "Bệnh viện Mắt Sài Gòn - Chi nhánh Quận 7\nĐịa chỉ: 16 Đường số 8, Phường Tân Phú, Quận 7.\nDịch vụ: Khám và điều trị các bệnh về mắt, phẫu thuật mắt.\n\nPhòng khám Mắt Quốc tế Viễn Đông\nĐịa chỉ: 127 Nguyễn Thị Thập, Phường Tân Quy, Quận 7.\nDịch vụ: Khám tổng quát, phẫu thuật và điều trị các bệnh lý về mắt."
+
+  utter_action_find_hospital_skin:
+    - text: "Bệnh viện Da liễu TP.HCM - Chi nhánh Gò Vấp\nĐịa chỉ: 26 Huỳnh Khương Ninh, Phường 3, Gò Vấp.\nDịch vụ: Khám và điều trị các bệnh về da, thẩm mỹ da."
+
+  utter_action_find_hospital_stomach:
+    - text: "Bệnh viện Đa khoa Tân Phú\nĐịa chỉ: 1012 Trường Chinh, Phường Tân Thành, Tân Phú.\nDịch vụ: Khám và điều trị các bệnh lý tiêu hóa, phẫu thuật bụng."
+
+  utter_action_find_hospital_joint:
+    - text: "Phòng khám Đa khoa SAIGON-ITO Tân Bình\nĐịa chỉ: 232 Lê Văn Sỹ, Phường 1, Quận Tân Bình.\nSố điện thoại: 028 3991 2030.\n\nBệnh viện Đa khoa Mỹ Đức Tân Bình\nĐịa chỉ: 4 Núi Thành, Phường 13, Quận Tân Bình."
+
+  utter_action_find_hospital_general_checkup:
+    - text: "Bệnh viện Đa khoa Quận 8\nĐịa chỉ: 82 Đường Cao Lỗ, Phường 4, Quận 8, TP.HCM."
+
+  utter_action_explain_fatigue_and_pain:
+    - text: "Nguyên nhân rất có thể do một số yếu tố như: Thiếu ngủ, Rối loạn nội tiết, Chế độ ăn uống không đầy đủ. Bạn hãy để lại thông tin liên hệ để chúng tôi có thể hẹn gặp và tư vấn kĩ hơn cho bạn."
+
+  utter_action_explain_chest_pain:
+    - text: "Đau ngực có thể do các vấn đề về tim mạch như đau thắt ngực, viêm màng ngoài tim hoặc các vấn đề về hô hấp. Bạn nên giữ bình tĩnh hay uống thuốc nếu tình trạng không bớt, hãy đến ngay trung tâm y tế gần nhất để được gặp bác sĩ."
+
+  utter_action_collect_contact_info:
+    - text: "Hãy cho chúng tôi thông tin để liên lạc nhé."
+  utter_action_explain_headache:
+    - text: "Đau đầu có thể do nhiều nguyên nhân khác nhau, chẳng hạn như căng thẳng, đau nửa đầu, hoặc vấn đề về mắt. Bạn có thể thử nghỉ ngơi và uống đủ nước. Nếu cơn đau đầu kéo dài hoặc kèm theo các triệu chứng như buồn nôn, nôn, hãy gặp bác sĩ để được chẩn đoán và điều trị kịp thời."
+
+  utter_action_explain_stress_management:
+    - text: "Stress có thể ảnh hưởng đến cả tinh thần và thể chất của bạn. Để giảm stress, bạn có thể thử những biện pháp sau: \n1. Tập thể dục: Thực hiện các bài tập thể dục nhẹ nhàng như đi bộ, yoga hoặc thái cực quyền có thể giúp giảm căng thẳng.\n2. Thực hành thư giãn: Thử các kỹ thuật thư giãn như thiền, hít thở sâu, hoặc nghe nhạc nhẹ.\n3. Quản lý thời gian: Tạo danh sách công việc và ưu tiên những nhiệm vụ quan trọng.\n4. Giữ lối sống lành mạnh: Ăn uống cân bằng và ngủ đủ giấc."
+
+  utter_action_explain_food_allergy:
+    - text: "Có thể bạn đang gặp phải phản ứng dị ứng thực phẩm. Dị ứng thực phẩm có thể gây ra các triệu chứng như phát ban, ngứa, sưng, đau bụng. Để xử lý tình trạng này, bạn nên: \n1. Ngừng ăn thực phẩm nghi ngờ.\n2. Dùng thuốc chống dị ứng nếu có.\n3. Theo dõi triệu chứng và đến ngay trung tâm y tế nếu cần.\n4. Gặp bác sĩ để xác định loại thực phẩm gây dị ứng."
+
+  utter_action_collect_contact_info:
+    - text: "Hãy cho chúng tôi thông tin để liên lạc nhé."
+  utter_action_collect_personal_info:
+    - text: "Bạn có thể cung cấp cho chúng tôi thông tin về tuổi, giới tính, chiều cao và cân nặng không?"
+
+  utter_action_recommend_orthopedic_doctor:
+    - text: "Cảm ơn bạn! Chúng tôi khuyên bạn nên gặp bác sĩ chuyên về cơ xương khớp."
+
+  utter_action_recommend_digestion_doctor:
+    - text: "Có vẻ như bạn nên gặp bác sĩ chuyên về tiêu hóa."
+
+  utter_action_offer_phone_consultation:
+    - text: "Nếu bạn muốn, chúng tôi có thể tư vấn cho bạn qua điện thoại hoặc đặt lịch hẹn khám tại phòng khám gần nhất."
+
+  utter_action_collect_symptoms:
+    - text: "Bạn có thể cho tôi biết triệu chứng cụ thể của bạn để chúng tôi có thể hỗ trợ tốt hơn không?"
+
+  utter_action_collect_allergy_info:
+    - text: "Bạn có thể cho chúng tôi biết thêm về triệu chứng và thông tin cá nhân như tuổi, giới tính được không?"
+
+  utter_action_recommend_allergy_doctor:
+    - text: "Có vẻ như bạn cần gặp bác sĩ chuyên về dị ứng."
+
+  utter_action_recommend_endocrinologist:
+    - text: "Với thông tin này, chúng tôi khuyên bạn nên gặp bác sĩ chuyên về nội tiết."
+
+  utter_action_collect_contact_info:
+    - text: "Xin vui lòng để lại thông tin liên hệ để chúng tôi có thể hỗ trợ bạn đặt lịch hẹn."
+
+  utter_action_collect_specialty:
+    - text: "Bạn muốn chuyên khoa nào?"
+
+  utter_action_provide_clinic_info:
+    - text: "Tôi có thể gửi bạn một số địa chỉ phòng khám gần khu vực bạn."
+
+  utter_action_provide_dermatology_clinic_info:
+    - text: "Tôi sẽ gửi cho bạn một số phòng khám da liễu ở quận 3."
+
+  utter_action_collect_symptoms:
+    - text: "Hãy cho tôi biết thêm triệu chứng của bạn."
+
+  utter_action_advise_doctor_visit:
+    - text: "Nếu triệu chứng kéo dài, bạn nên đi khám bác sĩ."
+
+  utter_action_advise_rest:
+    - text: "Bạn nên nghỉ ngơi, hít thở sâu."
+
+  utter_action_advise_stretching:
+    - text: "Chúng tôi khuyên bạn nên tập những bài tập kéo giãn nhẹ nhàng."
+
+  utter_action_collect_personal_info:
+    - text: "Bạn có thể cung cấp thêm thông tin về tuổi, giới tính, chiều cao và cân nặng của bạn không?"
+
+  utter_action_recommend_ent_doctor:
+    - text: "Với triệu chứng đau họng và sốt, chúng tôi khuyên bạn nên gặp bác sĩ chuyên khoa tai mũi họng."
+
+  utter_action_advise_neurologist:
+    - text: "Đau đầu dữ dội có thể là dấu hiệu của nhiều vấn đề khác nhau. Chúng tôi khuyên bạn nên gặp bác sĩ chuyên khoa nội thần kinh."
+
+  utter_action_explain_diabetes_symptoms:
+    - text: "Bệnh tiểu đường có thể gây ra nhiều triệu chứng như khát nước nhiều, đi tiểu thường xuyên, mệt mỏi và giảm cân không giải thích được."
+
+  utter_action_explain_high_blood_pressure:
+    - text: "Huyết áp cao có thể dẫn đến nhiều biến chứng nghiêm trọng. Triệu chứng có thể không rõ ràng, nhưng có thể bao gồm đau đầu và chóng mặt."
+
+  utter_action_explain_bronchitis:
+    - text: "Viêm phế quản thường gây ra ho, đờm và khó thở."
+
+  utter_action_explain_stomach_pain:
+    - text: "Đau dạ dày có thể do nhiều nguyên nhân khác nhau, bao gồm viêm loét hoặc trào ngược dạ dày thực quản."
+
+  utter_action_explain_anxiety:
+    - text: "Lo âu và stress có thể ảnh hưởng đến chất lượng cuộc sống. Việc điều trị có thể bao gồm liệu pháp tâm lý và các biện pháp tự chăm sóc."
+
+  utter_action_collect_contact_info:
+    - text: "Xin vui lòng để lại thông tin liên hệ để chúng tôi có thể hỗ trợ bạn đặt lịch hẹn."
+
+  utter_action_collect_additional_questions:
+    - text: "Bạn còn câu hỏi nào liên quan đến lo âu không?"
+  utter_action_explain_bmi:
+    - text: "Chỉ số BMI, hay chỉ số khối cơ thể, là một công cụ giúp đánh giá tình trạng cơ thể của bạn dựa trên cân nặng và chiều cao."
+
+  utter_action_collect_weight_height:
+    - text: "Bạn hãy cho tôi biết cân nặng và chiều cao của bạn."
+
+  utter_action_calculate_bmi:
+    - text: "Để tính, chúng ta sẽ lấy cân nặng chia cho bình phương chiều cao."
+
+  utter_action_offer_health_improvement:
+    - text: "Bạn có muốn biết thêm về cách cải thiện chỉ số này không?"
+
+  utter_action_explain_blood_pressure:
+    - text: "Huyết áp được đo bằng hai giá trị: huyết áp tâm thu và huyết áp tâm trương."
+
+  utter_action_offer_blood_pressure_check:
+    - text: "Nếu bạn muốn, chúng tôi có thể kiểm tra huyết áp cho bạn ngay bây giờ."
+
+  utter_action_explain_blood_sugar:
+    - text: "Chỉ số này đo mức glucose trong máu. Nếu chỉ số này cao hơn mức bình thường, có thể bạn có nguy cơ mắc tiểu đường."
+
+  utter_action_offer_blood_sugar_test:
+    - text: "Bạn có muốn đặt lịch hẹn để kiểm tra không?"
+
+  utter_action_explain_cholesterol:
+    - text: "Cholesterol được chia thành hai loại: LDL (cholesterol xấu) và HDL (cholesterol tốt)."
+
+  utter_action_offer_cholesterol_test:
+    - text: "Bạn có muốn chúng tôi hỗ trợ bạn đặt lịch kiểm tra cholesterol không?"
+
+  utter_action_explain_mental_health:
+    - text: "Có nhiều công cụ để đánh giá sức khỏe tâm thần, dựa trên cảm giác lo âu, trầm cảm và mức độ stress trong cuộc sống hàng ngày."
+
+  utter_action_collect_stress_info:
+    - text: "Bạn có từng cảm thấy căng thẳng và lo âu kéo dài không?"
+
+  utter_action_offer_psychological_assessment:
+    - text: "Chúng tôi có thể hướng dẫn bạn thực hiện một số bài kiểm tra đơn giản tại phòng khám."
+
 
 session_config:
   session_expiration_time: 60

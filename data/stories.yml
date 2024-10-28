@@ -28,3 +28,716 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+
+- story: weight_loss_advice
+  steps:
+  - intent: ask_weight_loss
+  - action: action_ask_height_weight
+  - intent: provide_height_weight
+  - action: action_calculate_bmi
+  - action: action_offer_diet_plan
+  - intent: confirm_diet_plan
+  - action: action_detail_diet_plan
+  - intent: provide_food_preferences
+  - action: action_suggest_alternatives
+
+- story: bodybuilding_nutrition
+  steps:
+  - intent: ask_bodybuilding_nutrition
+  - action: action_ask_goals
+  - intent: provide_goals
+  - action: action_offer_protein_tips
+  - intent: confirm_diet_plan
+  - action: action_suggest_foods
+  - intent: ask_meal_schedule
+  - action: action_offer_meal_schedule
+
+- story: diabetes_nutrition
+  steps:
+  - intent: ask_diabetes_nutrition
+  - action: action_offer_food_recommendations
+  - intent: confirm_food_list
+  - action: action_send_food_list
+  - intent: ask_logging_meals
+  - action: action_offer_meal_logging_help
+
+- story: pregnancy_nutrition
+  steps:
+  - intent: ask_pregnancy_nutrition
+  - action: action_offer_nutrition_tips
+  - intent: confirm_diet_plan
+  - action: action_suggest_foods
+  - intent: ask_foods_to_avoid
+  - action: action_send_foods_to_avoid
+
+- story: vegetarian_nutrition
+  steps:
+  - intent: ask_vegetarian_nutrition
+  - action: action_offer_protein_sources
+  - intent: confirm_sample_menu
+  - action: action_send_sample_menu
+  - intent: ask_cooking_info
+  - action: action_offer_cooking_tips
+
+- story: acne_skin_care
+  steps:
+  - intent: ask_acne_skin_care
+  - action: action_ask_skin_type
+  - intent: provide_skin_type
+  - action: action_offer_product_recommendations
+  - intent: confirm_product_recommendations
+  - action: action_give_usage_info
+
+- story: anti_ageing_skin_care
+  steps:
+  - intent: ask_anti_ageing
+  - action: action_offer_anti_ageing_tips
+  - intent: confirm_anti_ageing_advice
+  - action: action_suggest_routine
+  - intent: ask_additional_skin_care_info
+  - action: action_give_daily_care_tips
+
+- story: dry_damaged_hair_care
+  steps:
+  - intent: ask_hair_care
+  - action: action_offer_hair_repair_tips
+  - intent: confirm_hair_product_recommendations
+  - action: action_suggest_hair_products
+  - intent: ask_usage_guidance
+  - action: action_give_usage_instructions
+
+- story: sensitive_skin_care
+  steps:
+  - intent: ask_sensitive_skin_care
+  - action: action_offer_sensitive_skin_tips
+  - intent: confirm_routine
+  - action: action_suggest_simple_routine
+  - intent: ask_specific_product_recommendations
+  - action: action_give_specific_product_suggestions
+
+- story: skin_whitening_advice
+  steps:
+  - intent: ask_skin_whitening
+  - action: action_offer_whitening_tips
+  - intent: confirm_whitening_product_recommendations
+  - action: action_suggest_whitening_products
+  - intent: ask_usage_info
+  - action: action_give_usage_details
+- story: dental_care
+  steps:
+  - intent: ask_dental_care
+  - action: action_offer_brushing_advice
+  - intent: provide_brush_type
+  - action: action_give_brushing_tips
+  - intent: confirm_product_recommendations
+  - action: action_suggest_toothpaste
+
+- story: sensitive_teeth
+  steps:
+  - intent: ask_sensitive_teeth
+  - action: action_explain_sensitive_teeth
+  - intent: confirm_sensitivity
+  - action: action_offer_sensitive_toothpaste
+  - intent: ask_additional_remedies
+  - action: action_suggest_professional_treatment
+
+- story: tooth_filling_advice
+  steps:
+  - intent: ask_tooth_filling
+  - action: action_offer_dental_visit_advice
+  - intent: confirm_tooth_pain
+  - action: action_recommend_avoid_hot_cold
+  - intent: ask_signs_for_dentist
+  - action: action_list_signs_for_dentist
+
+- story: braces_advice
+  steps:
+  - intent: ask_braces
+  - action: action_explain_braces
+  - intent: confirm_teeth_alignment
+  - action: action_detail_braces_process
+  - intent: ask_types_of_braces
+  - action: action_explain_types_of_braces
+
+- story: dental_care_children
+  steps:
+  - intent: ask_child_dental_care
+  - action: action_offer_child_brushing_tips
+  - intent: confirm_child_age
+  - action: action_suggest_fun_brushing_activities
+  - intent: ask_child_motivation_tips
+  - action: action_offer_reward_system
+
+- story: weight_loss_exercise
+  steps:
+  - intent: ask_weight_loss_exercise
+  - action: action_offer_workout_plan
+  - intent: confirm_no_plan
+  - action: action_suggest_weekly_workout_schedule
+
+- story: beginner_exercise
+  steps:
+  - intent: ask_beginner_exercise
+  - action: action_offer_home_exercises
+  - intent: confirm_home_workout
+  - action: action_suggest_exercise_tips
+
+- story: athlete_nutrition
+  steps:
+  - intent: ask_athlete_nutrition
+  - action: action_offer_nutrition_advice
+  - intent: confirm_sport_type
+  - action: action_suggest_sample_meal_plan
+
+- story: injury_recovery
+  steps:
+  - intent: ask_injury_recovery
+  - action: action_explain_injury_care
+  - intent: confirm_no_doctor_visit
+  - action: action_suggest_rice_method
+
+- story: senior_exercise
+  steps:
+  - intent: ask_senior_exercise
+  - action: action_offer_senior_exercise_tips
+  - intent: confirm_senior_status
+  - action: action_suggest_specific_schedule
+
+- story: sexual_health_safety
+  steps:
+  - intent: ask_sexual_health_safety
+  - action: action_explain_safe_sex
+  - intent: confirm_more_info
+  - action: action_suggest_protection_methods
+
+- story: reproductive_health
+  steps:
+  - intent: ask_reproductive_health
+  - action: action_offer_health_concerns
+  - intent: confirm_period_pain
+  - action: action_advise_doctor_visit
+
+- story: sexual_dysfunction
+  steps:
+  - intent: ask_sexual_dysfunction
+  - action: action_explain_sexual_dysfunction
+  - intent: confirm_discomfort
+  - action: action_suggest_improvement_methods
+
+- story: stis_prevention
+  steps:
+  - intent: ask_stis_prevention
+  - action: action_explain_stis
+  - intent: confirm_sti_interest
+  - action: action_suggest_sti_info
+
+- story: pregnancy_and_fertility
+  steps:
+  - intent: ask_pregnancy_fertility
+  - action: action_offer_fertility_tips
+  - intent: confirm_want_to_increase_fertility
+  - action: action_suggest_healthy_lifestyle
+- story: weight_loss_advice
+  steps:
+  - intent: ask_weight_loss
+  - action: action_collect_height_weight
+  - intent: confirm_height_weight
+  - action: action_calculate_bmi
+  - intent: ask_diet_plan
+  - action: action_suggest_diet_plan
+  - intent: confirm_food_preferences
+  - action: action_propose_alternatives
+
+- story: bodybuilding_nutrition
+  steps:
+  - intent: ask_bodybuilding_nutrition
+  - action: action_collect_training_goal
+  - intent: confirm_training_goal
+  - action: action_suggest_protein_intake
+  - intent: ask_specific_foods
+  - action: action_propose_food_list
+
+- story: diabetes_nutrition
+  steps:
+  - intent: ask_diabetes_nutrition
+  - action: action_explain_diabetes_diet
+  - intent: confirm_want_food_list
+  - action: action_provide_food_list
+  - intent: ask_food_logging
+  - action: action_offer_logging_help
+
+- story: pregnancy_nutrition
+  steps:
+  - intent: ask_pregnancy_nutrition
+  - action: action_explain_pregnancy_diet
+  - intent: confirm_want_diet_plan
+  - action: action_propose_balanced_diet
+  - intent: ask_foods_to_avoid
+  - action: action_explain_foods_to_avoid
+
+- story: vegetarian_nutrition
+  steps:
+  - intent: ask_vegetarian_nutrition
+  - action: action_explain_vegetarian_diet
+  - intent: confirm_want_sample_menu
+  - action: action_propose_sample_menu
+  - intent: ask_cooking_info
+  - action: action_offer_cooking_tips
+- story: acne_skin_care
+  steps:
+  - intent: ask_acne_skin_care
+  - action: action_collect_skin_type
+  - intent: confirm_skin_type
+  - action: action_suggest_acne_products
+  - intent: ask_product_details
+  - action: action_provide_product_info
+
+- story: anti_aging_skin_care
+  steps:
+  - intent: ask_anti_aging_skin_care
+  - action: action_suggest_anti_aging_products
+  - intent: confirm_want_routine
+  - action: action_propose_anti_aging_routine
+  - intent: ask_more_skin_care_tips
+  - action: action_offer_skin_care_tips
+
+- story: dry_damaged_hair_care
+  steps:
+  - intent: ask_hair_care
+  - action: action_suggest_hair_recovery_products
+  - intent: confirm_need_product_suggestions
+  - action: action_provide_hair_product_info
+  - intent: ask_usage_instructions
+  - action: action_offer_usage_guidance
+
+- story: sensitive_skin_care
+  steps:
+  - intent: ask_sensitive_skin_care
+  - action: action_explain_sensitive_skin_care
+  - intent: confirm_want_simple_routine
+  - action: action_propose_sensitive_skin_routine
+  - intent: ask_specific_product_suggestions
+  - action: action_suggest_specific_products
+
+- story: skin_whitening
+  steps:
+  - intent: ask_skin_whitening
+  - action: action_explain_skin_whitening_methods
+  - intent: confirm_want_product_suggestions
+  - action: action_propose_whitening_products
+  - intent: ask_usage_info
+  - action: action_offer_usage_tips  
+- story: oral_care_advice
+  steps:
+  - intent: ask_oral_care
+  - action: action_collect_brush_type
+  - intent: confirm_brush_type
+  - action: action_provide_brushing_tips
+  - intent: ask_product_suggestions
+  - action: action_suggest_oral_products
+
+- story: sensitive_teeth_advice
+  steps:
+  - intent: ask_sensitive_teeth
+  - action: action_explain_sensitive_teeth
+  - intent: confirm_sensitivity
+  - action: action_suggest_sensitivity_remedies
+  - intent: ask_more_remedies
+  - action: action_provide_additional_remedies
+
+- story: cavity_advice
+  steps:
+  - intent: ask_cavity_advice
+  - action: action_explain_cavity_treatment
+  - intent: confirm_discomfort
+  - action: action_remind_to_visit_dentist
+  - intent: ask_warning_signs
+  - action: action_provide_warning_signs
+
+- story: braces_advice
+  steps:
+  - intent: ask_braces_advice
+  - action: action_explain_braces_benefits
+  - intent: confirm_need_braces
+  - action: action_explain_braces_process
+  - intent: ask_braces_types
+  - action: action_provide_braces_types
+
+- story: children's_dental_care
+  steps:
+  - intent: ask_children_dental_care
+  - action: action_collect_child_age
+  - intent: confirm_child_age
+  - action: action_provide_kids_brushing_tips
+  - intent: ask_kids_motivation_tips
+  - action: action_suggest_kids_motivation
+- story: weight_loss_exercise
+  steps:
+  - intent: ask_weight_loss_exercise
+  - action: action_collect_workout_plan
+  - intent: confirm_no_plan
+  - action: action_suggest_weekly_workout
+
+- story: beginner_exercise
+  steps:
+  - intent: ask_beginner_exercise
+  - action: action_collect_exercise_location
+  - intent: confirm_home_exercise
+  - action: action_suggest_home_exercises
+  - intent: ask_exercise_guidance
+  - action: action_provide_exercise_guidance
+
+- story: athlete_nutrition
+  steps:
+  - intent: ask_athlete_nutrition
+  - action: action_collect_sport_type
+  - intent: confirm_running
+  - action: action_suggest_nutrition_plan
+  - intent: ask_sample_menu
+  - action: action_provide_sample_menu
+
+- story: injury_care
+  steps:
+  - intent: ask_injury_care
+  - action: action_explain_injury_first_aid
+  - intent: confirm_no_doctor_visit
+  - action: action_provide_home_care_tips
+  - intent: ask_more_info
+  - action: action_offer_additional_info
+
+- story: senior_exercise_program
+  steps:
+  - intent: ask_senior_exercise
+  - action: action_collect_age_info
+  - intent: confirm_senior
+  - action: action_suggest_light_exercises
+  - intent: ask_specific_workout_plan
+  - action: action_offer_workout_plan
+- story: joint_pain_consultation
+  steps:
+  - intent: ask_joint_pain
+  - action: action_collect_joint_pain_info
+  - intent: confirm_back_pain
+  - action: action_suggest_joint_specialist
+
+- story: eye_problem_consultation
+  steps:
+  - intent: ask_eye_problem
+  - action: action_collect_eye_problem_info
+  - intent: confirm_eye_discomfort
+  - action: action_suggest_eye_specialist
+
+- story: post_covid_cough
+  steps:
+  - intent: ask_post_covid_cough
+  - action: action_collect_cough_info
+  - intent: confirm_day_night_cough
+  - action: action_suggest_post_covid_specialist
+
+- story: post_covid_fatigue
+  steps:
+  - intent: ask_post_covid_fatigue
+  - action: action_collect_fatigue_info
+  - intent: confirm_fatigue_during_sports
+  - action: action_suggest_fatigue_specialist
+
+- story: skin_problem_consultation
+  steps:
+  - intent: ask_skin_problem
+  - action: action_collect_skin_problem_info
+  - intent: confirm_acne_issue
+  - action: action_suggest_skin_specialist
+- story: ligament_strain_info
+  steps:
+  - intent: ask_ligament_strain
+  - action: action_explain_ligament_strain
+  - intent: ask_contact_info
+  - action: action_collect_contact_info
+
+- story: diabetes_info
+  steps:
+  - intent: ask_diabetes
+  - action: action_explain_diabetes
+  - intent: ask_contact_info
+  - action: action_collect_contact_info
+
+- story: digestive_disorder_info
+  steps:
+  - intent: ask_digestive_disorder
+  - action: action_explain_digestive_disorder
+  - intent: confirm_symptoms
+  - action: action_collect_contact_info
+
+- story: heart_disease_info
+  steps:
+  - intent: ask_heart_disease
+  - action: action_explain_heart_disease
+  - intent: ask_contact_info
+  - action: action_collect_contact_info
+
+- story: kidney_disease_info
+  steps:
+  - intent: ask_kidney_disease
+  - action: action_explain_kidney_disease
+  - intent: ask_contact_info
+  - action: action_collect_contact_info
+- story: diabetes_symptoms_info
+  steps:
+  - intent: ask_diabetes_symptoms
+  - action: action_explain_diabetes_symptoms
+  - intent: ask_contact_info
+  - action: action_collect_contact_info
+
+- story: heart_disease_symptoms_info
+  steps:
+  - intent: ask_heart_disease_symptoms
+  - action: action_explain_heart_disease_symptoms
+  - intent: ask_contact_info
+  - action: action_collect_contact_info
+
+- story: stomach_pain_symptoms_info
+  steps:
+  - intent: ask_stomach_pain_symptoms
+  - action: action_explain_stomach_pain_symptoms
+  - intent: ask_contact_info
+  - action: action_collect_contact_info
+
+- story: liver_disease_symptoms_info
+  steps:
+  - intent: ask_liver_disease_symptoms
+  - action: action_explain_liver_disease_symptoms
+  - intent: ask_contact_info
+  - action: action_collect_contact_info
+
+- story: joint_pain_symptoms_info
+  steps:
+  - intent: ask_joint_pain_symptoms
+  - action: action_explain_joint_pain_symptoms
+  - intent: ask_contact_info
+  - action: action_collect_contact_info
+- story: find_hospital_eye_problem
+  steps:
+  - intent: ask_eye_problem
+  - action: action_find_hospital_eye
+  - intent: ask_contact_info
+  - action: action_collect_contact_info
+
+- story: find_hospital_skin_problem
+  steps:
+  - intent: ask_skin_problem
+  - action: action_find_hospital_skin
+  - intent: ask_contact_info
+  - action: action_collect_contact_info
+
+- story: find_hospital_stomach_problem
+  steps:
+  - intent: ask_stomach_problem
+  - action: action_find_hospital_stomach
+  - intent: ask_contact_info
+  - action: action_collect_contact_info
+
+- story: find_hospital_joint_problem
+  steps:
+  - intent: ask_joint_problem
+  - action: action_find_hospital_joint
+  - intent: ask_contact_info
+  - action: action_collect_contact_info
+
+- story: find_hospital_general_checkup
+  steps:
+  - intent: ask_general_checkup
+  - action: action_find_hospital_general_checkup
+  - intent: ask_contact_info
+  - action: action_collect_contact_info
+
+- story: fatigue_and_pain_causes
+  steps:
+  - intent: ask_fatigue_and_pain
+  - action: action_explain_fatigue_and_pain
+  - intent: ask_contact_info
+  - action: action_collect_contact_info
+
+- story: chest_pain_causes
+  steps:
+  - intent: ask_chest_pain
+  - action: action_explain_chest_pain
+  - intent: ask_contact_info
+  - action: action_collect_contact_info
+- story: headache_causes
+  steps:
+  - intent: ask_headache
+  - action: action_explain_headache
+  - intent: ask_contact_info
+  - action: action_collect_contact_info
+
+- story: stress_management
+  steps:
+  - intent: ask_stress
+  - action: action_explain_stress_management
+  - intent: ask_contact_info
+  - action: action_collect_contact_info
+
+- story: food_allergy
+  steps:
+  - intent: ask_food_allergy
+  - action: action_explain_food_allergy
+  - intent: ask_contact_info
+  - action: action_collect_contact_info 
+- story: back_pain_consultation
+  steps:
+  - intent: ask_back_pain
+  - action: action_collect_personal_info
+  - action: action_recommend_orthopedic_doctor
+  - action: action_collect_contact_info
+
+- story: digestive_issue_consultation
+  steps:
+  - intent: ask_digestive_issue
+  - action: action_collect_personal_info
+  - action: action_recommend_digestion_doctor
+  - action: action_collect_contact_info
+
+- story: avoid_hospital_visit
+  steps:
+  - intent: ask_avoid_hospital
+  - action: action_offer_phone_consultation
+  - action: action_collect_symptoms
+  - action: action_collect_contact_info
+
+- story: allergy_consultation
+  steps:
+  - intent: ask_allergy
+  - action: action_collect_allergy_info
+  - action: action_recommend_allergy_doctor
+  - action: action_collect_contact_info
+
+- story: diabetes_checkup
+  steps:
+  - intent: ask_diabetes
+  - action: action_collect_personal_info
+  - action: action_recommend_endocrinologist
+  - action: action_collect_contact_info
+
+- story: find_clinic_quarter
+  steps:
+  - intent: ask_find_clinic_quarter
+  - action: action_collect_specialty
+  - action: action_provide_clinic_info
+
+- story: find_eye_clinic
+  steps:
+  - intent: ask_eye_clinic
+  - action: action_collect_location
+  - action: action_provide_clinic_info
+
+- story: find_clinic_in_district
+  steps:
+  - intent: ask_find_clinic
+  - action: action_collect_specialty
+  - action: action_provide_clinic_info
+
+- story: find_dermatology_clinic
+  steps:
+  - intent: ask_dermatology
+  - action: action_collect_symptoms
+  - action: action_provide_dermatology_clinic_info
+
+- story: diabetes_clinic_near
+  steps:
+  - intent: ask_distance_clinic
+  - action: action_collect_specialty
+  - action: action_provide_clinic_info
+- story: fever_and_symptoms
+  steps:
+  - intent: ask_fever
+  - action: action_collect_symptoms
+  - action: action_advise_doctor_visit
+
+- story: fatigue_and_breathing
+  steps:
+  - intent: ask_fatigue_breathing
+  - action: action_advise_rest
+  - action: action_collect_contact_info
+
+- story: back_pain_consultation
+  steps:
+  - intent: ask_back_pain
+  - action: action_advise_stretching
+  - action: action_collect_contact_info
+
+- story: sore_throat_and_fever
+  steps:
+  - intent: ask_sore_throat
+  - action: action_collect_personal_info
+  - action: action_recommend_ent_doctor
+
+- story: severe_headache
+  steps:
+  - intent: ask_severe_headache
+  - action: action_advise_neurologist
+
+- story: diabetes_information
+  steps:
+  - intent: ask_diabetes_info
+  - action: action_explain_diabetes_symptoms
+  - action: action_advise_doctor_visit
+
+- story: high_blood_pressure_info
+  steps:
+  - intent: ask_high_blood_pressure
+  - action: action_explain_high_blood_pressure
+  - action: action_collect_contact_info
+
+- story: bronchitis_information
+  steps:
+  - intent: ask_bronchitis_info
+  - action: action_explain_bronchitis
+  - action: action_collect_contact_info
+
+- story: stomach_pain_info
+  steps:
+  - intent: ask_stomach_pain
+  - action: action_explain_stomach_pain
+  - action: action_collect_contact_info
+
+- story: anxiety_and_stress_info
+  steps:
+  - intent: ask_anxiety_stress
+  - action: action_explain_anxiety
+  - action: action_collect_additional_questions     
+- story: bmi_information
+  steps:
+  - intent: ask_bmi
+  - action: action_explain_bmi
+  - action: action_collect_weight_height
+  - action: action_calculate_bmi
+  - action: action_offer_health_improvement
+
+- story: blood_pressure_information
+  steps:
+  - intent: ask_blood_pressure
+  - action: action_explain_blood_pressure
+  - action: action_collect_symptoms
+  - action: action_offer_blood_pressure_check
+
+- story: blood_sugar_information
+  steps:
+  - intent: ask_blood_sugar
+  - action: action_explain_blood_sugar
+  - action: action_collect_symptoms
+  - action: action_offer_blood_sugar_test
+
+- story: cholesterol_information
+  steps:
+  - intent: ask_cholesterol
+  - action: action_explain_cholesterol
+  - action: action_offer_cholesterol_test
+
+- story: mental_health_information
+  steps:
+  - intent: ask_mental_health
+  - action: action_explain_mental_health
+  - action: action_collect_stress_info
+  - action: action_offer_psychological_assessment    
+  

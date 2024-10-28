@@ -102,3 +102,707 @@ nlu:
     - I want to order food
     - What is 2 + 2?
     - Who's the US President?
+
+- intent: ask_clinic_location
+  examples: |
+    - i want to go to the [dentistry clinic](clinic)
+
+
+
+- intent: ask_weight_loss
+  examples: |
+    - Tôi muốn giảm cân, nhưng không biết nên bắt đầu từ đâu.
+    - Tôi cần lời khuyên về cách giảm cân.
+    - Tôi muốn giảm cân, nhưng không biết nên bắt đầu từ đâu.
+    - Làm thế nào để tôi có thể giảm cân?
+- intent: provide_height_weight
+  examples: |
+    - Tôi cao 1.65m và nặng 75kg.
+    - Chiều cao của tôi là 1.70m, cân nặng 80kg.
+
+- intent: ask_bodybuilding_nutrition
+  examples: |
+    - Tôi đang tập thể hình và muốn biết nên ăn uống như thế nào.
+    - Tôi cần chế độ dinh dưỡng cho việc tập gym.
+    - Làm thế nào để tôi có chế độ ăn uống tốt khi tập thể hình?
+
+- intent: provide_goals
+  examples: |
+    - Tôi muốn tăng cơ.
+    - Mục tiêu của tôi là giảm mỡ.
+
+- intent: ask_diabetes_nutrition
+  examples: |
+    - Tôi vừa được chẩn đoán mắc tiểu đường loại 2 và không biết nên ăn gì.
+    - Tôi cần tư vấn dinh dưỡng cho người tiểu đường.
+    - Tôi cần biết chế độ ăn uống cho người tiểu đường.
+- intent: ask_pregnancy_nutrition
+  examples: |
+    - Tôi đang mang thai và muốn biết nên ăn gì để tốt cho cả mẹ và bé.
+    - Tôi cần lời khuyên dinh dưỡng cho phụ nữ mang thai.
+    - Chế độ ăn uống nào là tốt nhất cho phụ nữ mang thai?
+- intent: ask_vegetarian_nutrition
+  examples: |
+    - Tôi vừa chuyển sang ăn chay nhưng không biết cách đảm bảo đủ dinh dưỡng.
+    - Tôi cần tư vấn dinh dưỡng cho người ăn chay.
+    - Tôi cần thông tin về chế độ ăn chay.
+- intent: ask_acne_skin_care
+  examples: |
+    - Tôi bị mụn nhiều, tôi nên làm gì để cải thiện tình trạng này?
+    - Tôi cần tư vấn chăm sóc da mụn.
+
+- intent: provide_skin_type
+  examples: |
+    - Da tôi là da dầu.
+    - Tôi có da khô.
+
+- intent: ask_anti_ageing
+  examples: |
+    - Tôi thấy da mình bắt đầu có nếp nhăn, tôi nên làm gì để chống lão hóa?
+    - Tôi muốn biết cách chống lão hóa da.
+
+- intent: ask_hair_care
+  examples: |
+    - Tóc tôi rất khô và hư tổn, tôi có thể làm gì để phục hồi tóc?
+    - Tôi cần tư vấn chăm sóc tóc.
+    - Làm thế nào để cải thiện tình trạng tóc khô?
+- intent: ask_sensitive_skin_care
+  examples: |
+    - Da tôi rất nhạy cảm và dễ bị kích ứng, tôi nên chăm sóc như thế nào?
+    - Tôi cần lời khuyên cho da nhạy cảm.
+
+- intent: ask_skin_whitening
+  examples: |
+    - Tôi muốn làm trắng da, nhưng không biết bắt đầu từ đâu.
+    - Tôi cần tư vấn về dưỡng trắng da.
+    - Làm thế nào để dưỡng trắng da hiệu quả?    
+- intent: ask_dental_care
+  examples: |
+    - Tôi muốn biết cách chăm sóc răng miệng đúng cách.
+    - Làm thế nào để có hàm răng khỏe mạnh?
+
+- intent: provide_brush_type
+  examples: |
+    - Tôi đang sử dụng bàn chải tay.
+    - Tôi dùng bàn chải điện.
+
+- intent: ask_sensitive_teeth
+  examples: |
+    - Tại sao răng của tôi lại nhạy cảm khi ăn đồ lạnh?
+    - Răng nhạy cảm có phải là vấn đề lớn không?
+    - Răng tôi nhạy cảm, tôi nên làm gì?
+- intent: confirm_sensitivity
+  examples: |
+    - Đúng vậy, đặc biệt là khi tôi ăn kem.
+    - Tôi thường xuyên gặp phải tình trạng này.
+
+- intent: ask_tooth_filling
+  examples: |
+    - Tôi có một chiếc răng bị sâu, tôi nên làm gì?
+    - Làm thế nào để sửa răng sâu?
+
+- intent: confirm_tooth_pain
+  examples: |
+    - Có, tôi cảm thấy hơi đau khi ăn.
+    - Đúng, răng tôi đang đau.
+
+- intent: ask_braces
+  examples: |
+    - Tôi đang cân nhắc niềng răng nhưng không biết liệu có cần thiết không.
+    - Niềng răng có giúp cải thiện tình trạng răng của tôi không?
+
+- intent: confirm_teeth_alignment
+  examples: |
+    - Vâng, răng tôi khá lệch và tôi cảm thấy tự ti.
+    - Đúng, răng tôi không khít.
+
+- intent: ask_child_dental_care
+  examples: |
+    - Tôi có con nhỏ và không biết làm thế nào để trẻ chăm sóc răng miệng.
+    - Làm thế nào để dạy trẻ đánh răng đúng cách?
+- intent: ask_weight_loss_exercise
+  examples: |
+    - Tôi muốn giảm cân, nhưng không biết bắt đầu tập thể dục từ đâu.
+    - Làm thế nào để tôi có thể tập thể dục để giảm cân?
+    - Làm thế nào để tôi có thể giảm cân bằng cách tập thể dục?
+- intent: confirm_no_plan
+  examples: |
+    - Tôi chưa có kế hoạch gì cả.
+    - Tôi không biết bắt đầu từ đâu.
+
+- intent: ask_beginner_exercise
+  examples: |
+    - Tôi mới bắt đầu tập thể dục và muốn biết những bài tập nào dễ thực hiện.
+    - Bạn có thể gợi ý bài tập cho người mới bắt đầu không?
+
+- intent: confirm_home_workout
+  examples: |
+    - Tôi muốn tập tại nhà.
+    - Tôi không thể đến phòng gym.
+
+- intent: ask_athlete_nutrition
+  examples: |
+    - Tôi là một vận động viên và cần biết chế độ ăn uống để tối ưu hóa hiệu suất tập luyện.
+    - Tôi nên ăn gì để hỗ trợ việc tập luyện của mình?
+
+- intent: confirm_sport_type
+  examples: |
+    - Tôi tập chạy và muốn tăng cường sức bền.
+    - Tôi đang tập luyện cho môn thể thao nào đó.
+
+- intent: ask_injury_recovery
+  examples: |
+    - Tôi bị chấn thương nhẹ khi tập thể dục và không biết phải làm gì.
+    - Làm thế nào để chăm sóc vết thương tại nhà?
+
+- intent: confirm_no_doctor_visit
+  examples: |
+    - Chưa, nhưng tôi muốn biết cách chăm sóc vết thương.
+    - Tôi không muốn đến bác sĩ ngay bây giờ.
+
+- intent: ask_senior_exercise
+  examples: |
+    - Tôi đang tìm kiếm chương trình tập luyện phù hợp cho người cao tuổi.
+    - Những bài tập nào tốt cho người cao tuổi?
+
+- intent: confirm_senior_status
+  examples: |
+    - Là cho tôi.
+    - Tôi là người cao tuổi.
+
+- intent: ask_sexual_health_safety
+  examples: |
+    - Tôi muốn biết cách để quan hệ tình dục an toàn.
+    - Làm thế nào để bảo vệ bản thân khi quan hệ tình dục?
+
+- intent: confirm_more_info
+  examples: |
+    - Vâng, tôi muốn biết thêm về các loại biện pháp bảo vệ.
+    - Có, tôi cần thêm thông tin.
+
+- intent: ask_reproductive_health
+  examples: |
+    - Tôi đang lo lắng về sức khỏe sinh sản của mình.
+    - Có vấn đề gì cụ thể về sức khỏe sinh sản mà tôi nên chú ý không?
+
+- intent: confirm_period_pain
+  examples: |
+    - Tôi thường xuyên bị đau bụng khi đến kỳ kinh nguyệt.
+    - Đau bụng kinh có phải là dấu hiệu của vấn đề gì không?
+
+- intent: ask_sexual_dysfunction
+  examples: |
+    - Tôi cảm thấy không thoải mái khi quan hệ tình dục và muốn tìm hiểu thêm về vấn đề này.
+    - Tôi thường xuyên bị mất cảm hứng khi gần gũi.
+
+- intent: confirm_discomfort
+  examples: |
+    - Đúng, tôi cảm thấy không thoải mái khi quan hệ.
+    - Tôi cảm thấy không thoải mái và muốn khắc phục điều này.
+
+- intent: ask_stis_prevention
+  examples: |
+    - Tôi muốn biết thêm về các bệnh lây truyền qua đường tình dục và cách phòng ngừa.
+    - Làm thế nào để ngăn ngừa các bệnh lây truyền qua đường tình dục?
+
+- intent: confirm_sti_interest
+  examples: |
+    - Có, tôi muốn biết về HIV.
+    - Tôi cần thông tin về các bệnh lây truyền qua đường tình dục khác.
+
+- intent: ask_pregnancy_fertility
+  examples: |
+    - Tôi đang tìm hiểu về khả năng mang thai và các yếu tố ảnh hưởng đến sinh sản.
+    - Có cách nào để tôi tối ưu hóa khả năng mang thai không?
+
+
+
+- intent: confirm_height_weight
+  examples: |
+    - Tôi cao 1.65m và nặng 75kg.
+    - Chiều cao của tôi là 1.65m và cân nặng là 75kg.
+
+- intent: ask_diet_plan
+  examples: |
+    - Tôi có thể tham khảo một kế hoạch dinh dưỡng không?
+    - Bạn có thể gợi ý cho tôi một chế độ ăn uống lành mạnh không?
+
+- intent: confirm_food_preferences
+  examples: |
+    - Tôi không thích rau xanh lắm.
+    - Tôi không thích ăn rau.
+
+
+- intent: confirm_training_goal
+  examples: |
+    - Tôi muốn tăng cơ.
+    - Mục tiêu của tôi là tăng cơ.
+
+
+
+- intent: confirm_want_food_list
+  examples: |
+    - Vâng, tôi muốn biết thêm.
+    - Có, tôi cần danh sách thực phẩm phù hợp.
+
+- intent: ask_food_logging
+  examples: |
+    - Tôi có cần ghi chép các bữa ăn hàng ngày không?
+    - Làm thế nào để tôi theo dõi chế độ ăn uống của mình?
+
+
+
+- intent: confirm_want_diet_plan
+  examples: |
+    - Có, tôi rất muốn biết.
+    - Vâng, tôi muốn kế hoạch ăn uống.
+
+- intent: ask_foods_to_avoid
+  examples: |
+    - Có thực phẩm nào tôi nên tránh trong thời gian mang thai không?
+    - Tôi cần biết về những thực phẩm không nên ăn khi mang thai.
+
+
+
+- intent: confirm_want_sample_menu
+  examples: |
+    - Có, tôi muốn biết thực đơn mẫu.
+    - Tôi cần một thực đơn cho người ăn chay.
+    
+- intent: ask_cooking_info
+  examples: |
+    - Bạn có cần thêm thông tin về cách chế biến thực phẩm không?
+    - Tôi muốn biết cách nấu các món ăn chay.   
+
+
+- intent: confirm_skin_type
+  examples: |
+    - Da tôi là da dầu.
+    - Tôi có da dầu.
+
+- intent: ask_product_details
+  examples: |
+    - Tôi muốn biết những sản phẩm nào tốt.
+    - Có sản phẩm nào bạn gợi ý không?
+
+- intent: ask_anti_aging_skin_care
+  examples: |
+    - Tôi thấy da mình bắt đầu có nếp nhăn, tôi nên làm gì để chống lão hóa?
+    - Làm thế nào để chống lão hóa da?
+
+- intent: confirm_want_routine
+  examples: |
+    - Có, tôi rất muốn biết thêm.
+    - Vâng, tôi muốn biết chu trình dưỡng da.
+
+- intent: ask_more_skin_care_tips
+  examples: |
+    - Bạn có cần tôi tư vấn thêm về cách chăm sóc da hàng ngày không?
+    - Tôi cần thêm thông tin về chăm sóc da.
+
+
+
+- intent: confirm_need_product_suggestions
+  examples: |
+    - Có, tôi cần những gợi ý đó.
+    - Tôi muốn biết những sản phẩm tốt cho tóc.
+
+- intent: ask_usage_instructions
+  examples: |
+    - Bạn có thể hướng dẫn cách sử dụng các sản phẩm này không?
+    - Tôi muốn biết cách sử dụng dầu dưỡng tóc.
+
+
+
+- intent: confirm_want_simple_routine
+  examples: |
+    - Có, tôi muốn biết thêm.
+    - Tôi cần một chu trình chăm sóc da đơn giản.
+
+- intent: ask_specific_product_suggestions
+  examples: |
+    - Bạn có thể gợi ý những sản phẩm cụ thể không?
+    - Tôi muốn biết sản phẩm nào phù hợp cho da nhạy cảm.
+
+
+
+- intent: confirm_want_product_suggestions
+  examples: |
+    - Có, làm ơn.
+    - Tôi muốn biết sản phẩm dưỡng trắng da phù hợp.
+
+- intent: ask_usage_info
+  examples: |
+    - Bạn có cần thêm thông tin về cách sử dụng không?
+    - Tôi muốn biết cách sử dụng serum vitamin C.
+- intent: ask_oral_care
+  examples: |
+    - Tôi muốn biết cách chăm sóc răng miệng đúng cách.
+    - Làm thế nào để chăm sóc răng miệng?
+
+- intent: confirm_brush_type
+  examples: |
+    - Tôi đang sử dụng bàn chải tay.
+    - Bàn chải của tôi là bàn chải tay.
+
+- intent: ask_product_suggestions
+  examples: |
+    - Tôi muốn biết thêm về các sản phẩm chăm sóc răng miệng.
+    - Có sản phẩm nào bạn gợi ý không?
+
+
+
+
+
+- intent: ask_more_remedies
+  examples: |
+    - Có, làm ơn cho tôi biết thêm.
+    - Tôi muốn biết thêm các biện pháp khắc phục.
+
+- intent: ask_cavity_advice
+  examples: |
+    - Tôi có một chiếc răng bị sâu, tôi nên làm gì?
+    - Làm thế nào để xử lý răng sâu?
+
+- intent: confirm_discomfort
+  examples: |
+    - Có, tôi cảm thấy hơi đau khi ăn.
+    - Tôi có cảm giác đau trong răng.
+
+- intent: ask_warning_signs
+  examples: |
+    - Bạn có thể gợi ý cho tôi một số dấu hiệu nhận biết khác khi nào nên đến nha sĩ không?
+    - Tôi muốn biết các dấu hiệu cần đi khám nha sĩ.
+
+- intent: ask_braces_advice
+  examples: |
+    - Tôi đang cân nhắc niềng răng nhưng không biết liệu có cần thiết không.
+    - Niềng răng có tốt không?
+
+- intent: confirm_need_braces
+  examples: |
+    - Vâng, răng tôi khá lệch và tôi cảm thấy tự ti.
+    - Tôi có răng lệch và cần phải niềng.
+
+- intent: ask_braces_types
+  examples: |
+    - Có, tôi muốn biết về các loại niềng răng khác nhau.
+    - Bạn có thể cho tôi biết về các loại niềng răng không?
+
+- intent: ask_children_dental_care
+  examples: |
+    - Tôi có con nhỏ và không biết làm thế nào để trẻ chăm sóc răng miệng.
+    - Làm thế nào để dạy trẻ đánh răng?
+    
+- intent: confirm_child_age
+  examples: |
+    - Nó 5 tuổi.
+    - Con tôi 5 tuổi.        
+
+
+- intent: confirm_no_plan
+  examples: |
+    - Tôi chưa có kế hoạch gì cả.
+    - Tôi không có kế hoạch tập luyện.
+
+- intent: ask_beginner_exercise
+  examples: |
+    - Tôi mới bắt đầu tập thể dục và muốn biết những bài tập nào dễ thực hiện.
+    - Tôi muốn biết bài tập nào phù hợp cho người mới bắt đầu.
+
+- intent: confirm_home_exercise
+  examples: |
+    - Tôi muốn tập tại nhà.
+    - Tôi sẽ tập ở nhà.
+
+- intent: ask_exercise_guidance
+  examples: |
+    - Bạn có thể hướng dẫn cách thực hiện các bài tập này không?
+    - Tôi muốn biết cách thực hiện bài tập.
+
+- intent: ask_athlete_nutrition
+  examples: |
+    - Tôi là một vận động viên và cần biết chế độ ăn uống để tối ưu hóa hiệu suất tập luyện.
+    - Tôi cần thông tin về dinh dưỡng cho vận động viên.
+
+- intent: confirm_running
+  examples: |
+    - Tôi tập chạy và muốn tăng cường sức bền.
+    - Tôi là người chạy bộ.
+
+- intent: ask_sample_menu
+  examples: |
+    - Bạn có thể gửi cho tôi một thực đơn mẫu không?
+    - Tôi muốn biết thực đơn phù hợp cho vận động viên.
+
+- intent: ask_injury_care
+  examples: |
+    - Tôi bị chấn thương nhẹ khi tập thể dục và không biết phải làm gì.
+    - Tôi cần lời khuyên về cách chăm sóc vết thương.
+
+- intent: confirm_no_doctor_visit
+  examples: |
+    - Chưa, nhưng tôi muốn biết cách chăm sóc tại nhà.
+    - Tôi chưa đi khám bác sĩ.
+
+- intent: ask_more_info
+  examples: |
+    - Bạn có thể cho tôi biết thêm thông tin không?
+    - Tôi cần biết thêm về việc chăm sóc vết thương.
+
+- intent: ask_senior_exercise
+  examples: |
+    - Tôi đang tìm kiếm chương trình tập luyện phù hợp cho người cao tuổi.
+    - Tôi muốn biết bài tập nào tốt cho người cao tuổi.
+
+- intent: confirm_senior
+  examples: |
+    - Là cho tôi.
+    - Tôi đang tìm thông tin cho bản thân.
+- intent: ask_joint_pain
+  examples: |
+    - Tôi đang bị vấn đề về xương khớp, tôi muốn thăm khám bác sĩ.
+    - Tôi cảm thấy đau lưng và hay mệt mỏi.
+
+- intent: confirm_back_pain
+  examples: |
+    - Tôi cảm thấy đau lưng.
+    - Tôi có vấn đề về lưng.
+
+- intent: ask_eye_problem
+  examples: |
+    - Tôi đang bị vấn đề về mắt, tôi muốn thăm khám bác sĩ.
+    - Tôi cảm thấy đau mắt, rát.
+
+- intent: confirm_eye_discomfort
+  examples: |
+    - Tôi cảm thấy đau mắt.
+    - Tôi thấy rát mắt.
+
+- intent: ask_post_covid_cough
+  examples: |
+    - Tôi đang hay bị ho sau hậu covid, tôi muốn thăm khám bác sĩ.
+    - Tôi thường hay ho vào ban ngày lẫn ban đêm.
+
+- intent: confirm_day_night_cough
+  examples: |
+    - Tôi thường hay ho vào ban ngày và ban đêm.
+    - Tôi ho cả ngày lẫn đêm.
+
+- intent: ask_post_covid_fatigue
+  examples: |
+    - Tôi cảm thấy thể lực yếu hơn sau hậu covid, tôi muốn thăm khám bác sĩ.
+    - Tôi chơi thể thao mau mệt hơn trước kia.
+
+- intent: confirm_fatigue_during_sports
+  examples: |
+    - Tôi chơi thể thao mau mệt hơn.
+    - Tôi cảm thấy mệt khi tập thể thao.
+
+- intent: ask_skin_problem
+  examples: |
+    - Tôi cảm thấy da tôi nổi mụn nhiều.
+    - Da tôi có nhiều mụn.
+
+- intent: confirm_acne_issue
+  examples: |
+    - Tôi bị nổi mụn.
+    - Da tôi có vấn đề về mụn.
+- intent: ask_ligament_strain
+  examples: |
+    - Có thể cho tôi biết thế nào là giãn dây chằng khớp gối không?
+    - Giãn dây chằng khớp gối là gì?
+
+- intent: ask_diabetes
+  examples: |
+    - Có thể cho tôi biết thế nào là tiểu đường không?
+    - Tiểu đường là gì?
+
+- intent: ask_digestive_disorder
+  examples: |
+    - Có thể cho tôi biết thế nào là rối loạn tiêu hóa không?
+    - Rối loạn tiêu hóa là gì?
+
+- intent: confirm_symptoms
+  examples: |
+    - Tôi thấy đau bụng và buồn nôn.
+    - Tôi có triệu chứng đau bụng.
+
+- intent: ask_heart_disease
+  examples: |
+    - Có thể cho tôi biết thế nào là bệnh tim không?
+    - Bệnh tim là gì?
+
+- intent: ask_kidney_disease
+  examples: |
+    - Có thể cho tôi biết thế nào là bệnh thận không?
+    - Bệnh thận là gì?
+
+- intent: ask_contact_info
+  examples: |
+    - Tôi muốn để lại thông tin liên lạc.
+    - Hãy cho tôi biết thông tin để liên lạc.
+- intent: ask_diabetes_symptoms
+  examples: |
+    - Có thể cho tôi biết thế nào là dấu hiệu bệnh tiểu đường không?
+    - Dấu hiệu của bệnh tiểu đường là gì?
+
+- intent: ask_heart_disease_symptoms
+  examples: |
+    - Có thể cho tôi biết thế nào là dấu hiệu bệnh tim không?
+    - Dấu hiệu của bệnh tim là gì?
+
+- intent: ask_stomach_pain_symptoms
+  examples: |
+    - Có thể cho tôi biết thế nào là dấu hiệu của đau bao tử không?
+    - Dấu hiệu của đau bao tử là gì?
+
+- intent: ask_liver_disease_symptoms
+  examples: |
+    - Có thể cho tôi biết dấu hiệu của bệnh gan không?
+    - Dấu hiệu của bệnh gan là gì?
+
+- intent: ask_joint_pain_symptoms
+  examples: |
+    - Có thể cho tôi biết dấu hiệu của vấn đề xương khớp ở người lớn tuổi không?
+    - Dấu hiệu của vấn đề xương khớp là gì?
+
+- intent: ask_contact_info
+  examples: |
+    - Tôi muốn để lại thông tin liên lạc.
+    - Hãy cho tôi biết thông tin để liên lạc.
+- intent: ask_eye_problem
+  examples: |
+    - Tôi đang gặp vấn đề về mắt và tôi đang ở quận 7 hãy giúp tôi tìm bệnh viện gần nhất.
+
+- intent: ask_skin_problem
+  examples: |
+    - Tôi đang gặp vấn đề về da liễu và tôi đang ở quận Gò Vấp, hãy giúp tôi tìm bệnh viện gần nhất.
+
+- intent: ask_stomach_problem
+  examples: |
+    - Tôi đang gặp vấn đề về đau bao tử và bệnh viện ở khá xa hãy cho tôi nơi để khám và điều trị gần nhất tôi đang ở Tân Phú.
+
+- intent: ask_joint_problem
+  examples: |
+    - Tôi đang gặp vấn đề về đau xương khớp tôi muốn tìm bệnh viện gần Quận Tân Bình.
+
+- intent: ask_general_checkup
+  examples: |
+    - Tôi đang ở quận 8 và tôi cần khám bệnh tổng quát hãy giúp tôi tìm phòng khám gần nhất.
+
+- intent: ask_fatigue_and_pain
+  examples: |
+    - Tôi cảm thấy mệt mỏi và đau nhức vai. Hãy cho tôi biết tại sao?
+
+- intent: ask_chest_pain
+  examples: |
+    - Nguyên nhân nào khiến tôi bị đau ngực?    
+- intent: ask_headache
+  examples: |
+    - Tôi bị đau đầu dữ dội gần đây, không biết nguyên nhân là gì?
+
+- intent: ask_stress
+  examples: |
+    - Tôi cảm thấy căng thẳng và lo âu thường xuyên, ảnh hưởng đến công việc và giấc ngủ của tôi. Tôi nên làm gì để giảm stress?
+
+- intent: ask_food_allergy
+  examples: |
+    - Tôi bị phát ban và ngứa sau khi ăn một loại thực phẩm lạ. Có phải tôi bị dị ứng thực phẩm không?            
+- intent: ask_back_pain
+  examples: |
+    - Tôi bị đau lưng, tôi muốn thăm khám bác sĩ.
+
+- intent: ask_digestive_issue
+  examples: |
+    - Tôi có vấn đề về tiêu hóa và muốn khám bác sĩ.
+
+- intent: ask_avoid_hospital
+  examples: |
+    - Tôi không được khỏe nhưng tôi không muốn đi bệnh viện.
+
+- intent: ask_allergy
+  examples: |
+    - Tôi bị dị ứng và muốn gặp bác sĩ.
+
+- intent: ask_diabetes
+  examples: |
+    - Tôi muốn kiểm tra bệnh tiểu đường.
+
+- intent: ask_find_clinic_quarter
+  examples: |
+    - Tôi đang ở quận 3 tôi muốn tìm phòng khám khu vực này.
+
+- intent: ask_eye_clinic
+  examples: |
+    - Tôi muốn tìm phòng khám về mắt.
+
+- intent: ask_find_clinic
+  examples: |
+    - Tôi muốn tìm phòng khám ở khu vực quận 1.
+
+- intent: ask_dermatology
+  examples: |
+    - Tôi bị ngứa và nổi đỏ da. Tôi muốn khám ở quận 3.
+
+- intent: ask_distance_clinic
+  examples: |
+    - Tôi muốn khám bệnh nhưng bệnh viện cách quá xa.
+- intent: ask_fever
+  examples: |
+    - Tôi đang sốt 39 độ.
+  
+- intent: ask_fatigue_breathing
+  examples: |
+    - Tôi cảm thấy rất mệt mỏi và khó thở.
+
+- intent: ask_back_pain
+  examples: |
+    - Tôi bị đau lưng và muốn khám bác sĩ.
+
+- intent: ask_sore_throat
+  examples: |
+    - Tôi cảm thấy đau họng và sốt.
+
+- intent: ask_severe_headache
+  examples: |
+    - Tôi bị đau đầu dữ dội.
+
+- intent: ask_diabetes_info
+  examples: |
+    - Vâng, tôi muốn biết về triệu chứng và cách điều trị bệnh tiểu đường.
+
+- intent: ask_high_blood_pressure
+  examples: |
+    - Có, tôi không hiểu rõ về huyết áp cao.
+
+- intent: ask_bronchitis_info
+  examples: |
+    - Tôi muốn thông tin về viêm phế quản.
+
+- intent: ask_stomach_pain
+  examples: |
+    - Tôi muốn biết về đau dạ dày.
+
+- intent: ask_anxiety_stress
+  examples: |
+    - Vâng, tôi cảm thấy lo âu và stress.      
+- intent: ask_bmi
+  examples: |
+    - Chỉ số BMI, tôi nghe nói về nó, nhưng không hiểu rõ lắm.
+
+- intent: ask_blood_pressure
+  examples: |
+    - Chỉ số huyết áp là gì.
+
+- intent: ask_blood_sugar
+  examples: |
+    - Chỉ số đường huyết.
+
+- intent: ask_cholesterol
+  examples: |
+    - Tìm hiểu về cholesterol.
+
+- intent: ask_mental_health
+  examples: |
+    - Chỉ số sức khoẻ tâm thần.  
