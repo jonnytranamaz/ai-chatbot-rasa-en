@@ -20,7 +20,6 @@ intents:
   - ask_diabetes_nutrition
   - ask_pregnancy_nutrition
   - ask_vegetarian_nutrition
-  - ask_acne_skin_care
   - provide_skin_type
   - ask_anti_ageing
   - ask_hair_care
@@ -54,19 +53,14 @@ intents:
   - ask_stis_prevention
   - confirm_sti_interest
   - ask_pregnancy_fertility
-  - ask_weight_loss
   - confirm_height_weight
   - ask_diet_plan
   - confirm_food_preferences
-  - ask_bodybuilding_nutrition
   - confirm_training_goal
-  - ask_diabetes_nutrition
   - confirm_want_food_list
   - ask_food_logging
-  - ask_pregnancy_nutrition
   - confirm_want_diet_plan
   - ask_foods_to_avoid
-  - ask_vegetarian_nutrition
   - confirm_want_sample_menu
   - ask_cooking_info
   - ask_acne_skin_care
@@ -75,19 +69,15 @@ intents:
   - ask_anti_aging_skin_care
   - confirm_want_routine
   - ask_more_skin_care_tips
-  - ask_hair_care
   - confirm_need_product_suggestions
   - ask_usage_instructions
-  - ask_sensitive_skin_care
   - confirm_want_simple_routine
   - ask_specific_product_suggestions
-  - ask_skin_whitening
   - confirm_want_product_suggestions
   - ask_usage_info
   - ask_oral_care
   - confirm_brush_type
   - ask_product_suggestions
-  - ask_sensitive_teeth
   - confirm_sensitivity
   - ask_more_remedies
   - ask_cavity_advice
@@ -98,7 +88,6 @@ intents:
   - ask_braces_types
   - ask_children_dental_care
   - confirm_child_age
-  - ask_weight_loss_exercise
   - confirm_no_plan
   - ask_beginner_exercise
   - confirm_home_exercise
@@ -169,6 +158,7 @@ intents:
   - ask_blood_sugar
   - ask_cholesterol
   - ask_mental_health
+
 actions:
   - action_ask_height_weight
   - action_calculate_bmi
@@ -370,7 +360,6 @@ actions:
   - action_explain_mental_health
   - action_collect_stress_info
   - action_offer_psychological_assessment
-actions:
   - action_extract_symptom
 
 entities:
@@ -396,6 +385,7 @@ slots:
     mappings:
       - type: from_entity
         entity: speciality
+
 responses:
   utter_greet:
   - text: "Hey! How are you?"
@@ -421,16 +411,15 @@ responses:
 
   utter_out_of_scope:
   - text: Sorry, I can't handle that request.
+
   utter_please_rephrase:
   - text: I'm sorry, I didn't quite understand that because of NLU fallback. Could you rephrase?
+  
   utter_return_clinic_location:
   - text: "The clinic is located at district 7, Ho Chi Minh City"
 
   utter_action_ask_height_weight:
     - text: "Bạn có thể cung cấp chiều cao và cân nặng hiện tại của mình không?"
-
-  utter_action_calculate_bmi:
-    - text: "Chỉ số BMI của bạn là khoảng {bmi}. Điều này cho thấy bạn đang ở ngưỡng thừa cân."
 
   utter_action_offer_diet_plan:
     - text: "Tôi có thể gợi ý cho bạn một kế hoạch dinh dưỡng lành mạnh để giảm cân từ từ. Bạn có muốn tham khảo không?"
@@ -462,8 +451,6 @@ responses:
   utter_action_send_sample_menu:
     - text: "Một thực đơn mẫu có thể bao gồm cháo yến mạch cho bữa sáng, salad đậu cho bữa trưa."
 
-  utter_action_offer_cooking_tips:
-    - text: "Bạn có cần thêm thông tin về cách chế biến thực phẩm không?"
   utter_action_ask_skin_type:
     - text: "Bạn có biết loại da của mình (da dầu, da khô, da hỗn hợp) không?"
 
@@ -516,9 +503,6 @@ responses:
 
   utter_action_suggest_toothpaste:
     - text: "Bạn có thể thử sử dụng kem đánh răng có chứa fluoride để tăng cường bảo vệ men răng."
-
-  utter_action_explain_sensitive_teeth:
-    - text: "Răng nhạy cảm có thể do mòn men răng hoặc lộ ngà."
 
   utter_action_offer_sensitive_toothpaste:
     - text: "Bạn có thể thử sử dụng kem đánh răng chuyên dụng cho răng nhạy cảm."
@@ -613,9 +597,6 @@ responses:
     - text: "Bạn có muốn tôi gợi ý một số thực phẩm tốt cho sức khỏe sinh sản không?"
   utter_action_collect_height_weight:
     - text: "Bạn có thể cung cấp chiều cao và cân nặng hiện tại của mình không?"
-
-  utter_action_calculate_bmi:
-    - text: "Chỉ số BMI của bạn là khoảng 27.55, điều này cho thấy bạn đang ở ngưỡng thừa cân."
 
   utter_action_suggest_diet_plan:
     - text: "Tôi có thể gợi ý cho bạn một kế hoạch dinh dưỡng lành mạnh để giảm cân từ từ."
@@ -785,8 +766,6 @@ responses:
   utter_action_suggest_light_exercises:
     - text: "Các bài tập nhẹ nhàng như đi bộ, yoga hoặc thể dục nhịp điệu rất tốt cho sức khỏe."
 
-  utter_action_offer_workout_plan:
-    - text: "Bạn có muốn tôi gợi ý một lịch tập cụ thể không?"
   utter_action_collect_joint_pain_info:
     - text: "Bạn có thể cung cấp cho chúng tôi một số thông tin về vấn đề bạn đang gặp phải được không?"
 
@@ -831,11 +810,6 @@ responses:
   utter_action_explain_kidney_disease:
     - text: "Bệnh thận là các tình trạng liên quan đến chức năng của thận, như suy thận, sỏi thận hoặc nhiễm trùng thận."
 
-  utter_action_collect_contact_info:
-    - text: "Hãy cho chúng tôi thông tin để liên lạc nhé."
-  utter_action_explain_diabetes_symptoms:
-    - text: "Bệnh tiểu đường là một tình trạng liên quan đến khả năng cơ thể sử dụng insulin, dẫn đến mức đường huyết cao. Các triệu chứng có thể bao gồm: Khát nước quá mức, Đi tiểu thường xuyên, Mệt mỏi, Giảm cân không rõ lý do."
-
   utter_action_explain_heart_disease_symptoms:
     - text: "Bệnh tim là một tình trạng liên quan đến chức năng của tim và mạch máu. Các triệu chứng có thể bao gồm: Đau ngực hoặc cảm giác nặng nề, Khó thở, Mệt mỏi không rõ lý do, Nhịp tim không đều."
 
@@ -848,8 +822,6 @@ responses:
   utter_action_explain_joint_pain_symptoms:
     - text: "Các vấn đề về xương khớp ở người lớn tuổi có thể gây ra các triệu chứng như: Đau hoặc cứng khớp, đặc biệt là vào buổi sáng, Khó khăn trong việc di chuyển hoặc vận động khớp, Sưng hoặc đỏ ở các khớp, Giảm phạm vi chuyển động của khớp."
 
-  utter_action_collect_contact_info:
-    - text: "Hãy cho chúng tôi thông tin để liên lạc nhé."
   utter_action_find_hospital_eye:
     - text: "Bệnh viện Mắt Sài Gòn - Chi nhánh Quận 7\nĐịa chỉ: 16 Đường số 8, Phường Tân Phú, Quận 7.\nDịch vụ: Khám và điều trị các bệnh về mắt, phẫu thuật mắt.\n\nPhòng khám Mắt Quốc tế Viễn Đông\nĐịa chỉ: 127 Nguyễn Thị Thập, Phường Tân Quy, Quận 7.\nDịch vụ: Khám tổng quát, phẫu thuật và điều trị các bệnh lý về mắt."
 
@@ -871,8 +843,6 @@ responses:
   utter_action_explain_chest_pain:
     - text: "Đau ngực có thể do các vấn đề về tim mạch như đau thắt ngực, viêm màng ngoài tim hoặc các vấn đề về hô hấp. Bạn nên giữ bình tĩnh hay uống thuốc nếu tình trạng không bớt, hãy đến ngay trung tâm y tế gần nhất để được gặp bác sĩ."
 
-  utter_action_collect_contact_info:
-    - text: "Hãy cho chúng tôi thông tin để liên lạc nhé."
   utter_action_explain_headache:
     - text: "Đau đầu có thể do nhiều nguyên nhân khác nhau, chẳng hạn như căng thẳng, đau nửa đầu, hoặc vấn đề về mắt. Bạn có thể thử nghỉ ngơi và uống đủ nước. Nếu cơn đau đầu kéo dài hoặc kèm theo các triệu chứng như buồn nôn, nôn, hãy gặp bác sĩ để được chẩn đoán và điều trị kịp thời."
 
@@ -882,8 +852,6 @@ responses:
   utter_action_explain_food_allergy:
     - text: "Có thể bạn đang gặp phải phản ứng dị ứng thực phẩm. Dị ứng thực phẩm có thể gây ra các triệu chứng như phát ban, ngứa, sưng, đau bụng. Để xử lý tình trạng này, bạn nên: \n1. Ngừng ăn thực phẩm nghi ngờ.\n2. Dùng thuốc chống dị ứng nếu có.\n3. Theo dõi triệu chứng và đến ngay trung tâm y tế nếu cần.\n4. Gặp bác sĩ để xác định loại thực phẩm gây dị ứng."
 
-  utter_action_collect_contact_info:
-    - text: "Hãy cho chúng tôi thông tin để liên lạc nhé."
   utter_action_collect_personal_info:
     - text: "Bạn có thể cung cấp cho chúng tôi thông tin về tuổi, giới tính, chiều cao và cân nặng không?"
 
@@ -920,20 +888,11 @@ responses:
   utter_action_provide_dermatology_clinic_info:
     - text: "Tôi sẽ gửi cho bạn một số phòng khám da liễu ở quận 3."
 
-  utter_action_collect_symptoms:
-    - text: "Hãy cho tôi biết thêm triệu chứng của bạn."
-
-  utter_action_advise_doctor_visit:
-    - text: "Nếu triệu chứng kéo dài, bạn nên đi khám bác sĩ."
-
   utter_action_advise_rest:
     - text: "Bạn nên nghỉ ngơi, hít thở sâu."
 
   utter_action_advise_stretching:
     - text: "Chúng tôi khuyên bạn nên tập những bài tập kéo giãn nhẹ nhàng."
-
-  utter_action_collect_personal_info:
-    - text: "Bạn có thể cung cấp thêm thông tin về tuổi, giới tính, chiều cao và cân nặng của bạn không?"
 
   utter_action_recommend_ent_doctor:
     - text: "Với triệu chứng đau họng và sốt, chúng tôi khuyên bạn nên gặp bác sĩ chuyên khoa tai mũi họng."
@@ -955,9 +914,6 @@ responses:
 
   utter_action_explain_anxiety:
     - text: "Lo âu và stress có thể ảnh hưởng đến chất lượng cuộc sống. Việc điều trị có thể bao gồm liệu pháp tâm lý và các biện pháp tự chăm sóc."
-
-  utter_action_collect_contact_info:
-    - text: "Xin vui lòng để lại thông tin liên hệ để chúng tôi có thể hỗ trợ bạn đặt lịch hẹn."
 
   utter_action_collect_additional_questions:
     - text: "Bạn còn câu hỏi nào liên quan đến lo âu không?"
@@ -999,7 +955,6 @@ responses:
 
   utter_action_offer_psychological_assessment:
     - text: "Chúng tôi có thể hướng dẫn bạn thực hiện một số bài kiểm tra đơn giản tại phòng khám."
-
 
 session_config:
   session_expiration_time: 60
